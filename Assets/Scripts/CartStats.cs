@@ -4,6 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CartStats : MonoBehaviour
 {
+
+    private bool hasGameStarted = false;
+    public bool HasGameStarted {
+        get {
+            return hasGameStarted;
+        }
+        set {
+            hasGameStarted = value;
+            StartGame();
+        }
+    } 
     public bool paused = false;
     public Timer timer;
     public int hp;
@@ -24,6 +35,8 @@ public class CartStats : MonoBehaviour
     public AudioSource hitAudioSource;
     public AudioClip hitSound;
     public AudioClip protectSound;
+
+    public AudioSource backgroundMusic;
 
 
     private void OnCollisionEnter(Collision collision)
@@ -87,5 +100,10 @@ public class CartStats : MonoBehaviour
         immune = false;
         trainAnim.SetBool("Immune", false);
     }
+
+    private void StartGame(){
+        backgroundMusic.Play();
+    }
+
 
 }
