@@ -7,6 +7,7 @@ public class spawningObstacles : MonoBehaviour
     // Start is called before the first frame update
     private Color colorOne = new Color(0.03f, 0.58f, 0.01f);
     private Color colorTwo = new Color(0.48f, 0.5f, 0.55f);
+    //private Material material = new Material();
 
     public Transform island;
 
@@ -121,6 +122,7 @@ public class spawningObstacles : MonoBehaviour
         StartCoroutine(Spawner(spawnTimer));
     }
 
+
     public void switchTextures(int level)
     {
         switch (level)
@@ -151,8 +153,8 @@ public class spawningObstacles : MonoBehaviour
 
             //Gemstone
             case 4:
-                colorOne = new Color(0.29f, 0.92f, 0.86f);
-                colorTwo = new Color(0.29f, 0.92f, 0.86f);
+                colorOne = new Color(0.29f, 0.92f, 0.86f, 0.0f);
+                colorTwo = new Color(0.29f, 0.92f, 0.86f, 0.0f);
                 break;
         }
     }
