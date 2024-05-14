@@ -5,6 +5,8 @@ using UnityEngine;
 public class spawningObstacles : MonoBehaviour
 {
     // Start is called before the first frame update
+    private Color colorOne = new Color(0.03f, 0.58f, 0.01f);
+    private Color colorTwo = new Color(0.48f, 0.5f, 0.55f);
 
     public Transform island;
 
@@ -77,7 +79,11 @@ public class spawningObstacles : MonoBehaviour
 
             int trackSpawn = Random.Range(0, 3);
             int rock = Random.Range(0, smallObstacle.Count);
-            obstacle = Instantiate(smallObstacle[rock], spawnLocations[trackSpawn].position, Quaternion.identity, island); 
+            obstacle = Instantiate(smallObstacle[rock], spawnLocations[trackSpawn].position, Quaternion.identity, island);
+
+            obstacle.GetComponent<Renderer>().materials[0].color = colorOne;
+            obstacle.GetComponent<Renderer>().materials[1].color = colorTwo;
+
 
             spawnTimer = Random.Range(baseSpawnTimer * .5f, baseSpawnTimer * 1.5f);
             obstacle.GetComponent<Force>().rotScript = rotScript;
@@ -88,6 +94,9 @@ public class spawningObstacles : MonoBehaviour
             int trackSpawn = Random.Range(3, 5);
             int rock = Random.Range(0, mediumObstacle.Count);
             obstacle = Instantiate(mediumObstacle[rock], spawnLocations[trackSpawn].position, Quaternion.identity, island);
+
+            obstacle.GetComponent<Renderer>().materials[0].color = colorOne;
+            obstacle.GetComponent<Renderer>().materials[1].color = colorTwo;
 
             spawnTimer = Random.Range(baseSpawnTimer * 1.5f, baseSpawnTimer * 3f);
             obstacle.GetComponent<Force>().rotScript = rotScript;
@@ -110,5 +119,41 @@ public class spawningObstacles : MonoBehaviour
 
         
         StartCoroutine(Spawner(spawnTimer));
+    }
+
+    public void switchTextures(int level)
+    {
+        switch (level)
+        {
+            //Grass Level
+            case 0:
+                colorOne = new Color(0.03f, 0.58f, 0.01f);
+                colorTwo = new Color(0.48f, 0.5f, 0.55f);
+                break;
+
+            //Sand Level
+            case 1:
+                colorOne = new Color(0.58f, 0.37f, 0.26f);
+                colorTwo = new Color(0.69f, 0.44f, 0.32f);
+                break;
+
+            //Volcano
+            case 2:
+                colorOne = new Color(0.99f, 0.26f, 0.24f);
+                colorTwo = new Color(0.27f, 0.24f, 0.25f);
+                break;
+
+            //Tunnel
+            case 3:
+                colorOne = new Color(0.61f, 0.56f, 0.51f);
+                colorTwo = new Color(0.61f, 0.56f, 0.51f);
+                break;
+
+            //Gemstone
+            case 4:
+                colorOne = new Color(0.29f, 0.92f, 0.86f);
+                colorTwo = new Color(0.29f, 0.92f, 0.86f);
+                break;
+        }
     }
 }

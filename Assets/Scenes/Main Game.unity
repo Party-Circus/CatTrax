@@ -11840,6 +11840,7 @@ MonoBehaviour:
   currentHealth: 0
   gameOverScript: {fileID: 2158302285349175024}
   isProtected: 0
+  spawningScript: {fileID: 535499648716109000}
   forcefield: {fileID: 1775681402}
   invincFramesTime: 2
   immune: 0

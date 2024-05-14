@@ -566,8 +566,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1580,10 +1589,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3110028303208957865}
     m_Modifications:
+    - target: {fileID: 1542624037194623893, guid: d9b293efa1ccee648860f1a0bdffc4f9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1608981101931789010, guid: d9b293efa1ccee648860f1a0bdffc4f9,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653876499986026780, guid: d9b293efa1ccee648860f1a0bdffc4f9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3123607573601511466, guid: d9b293efa1ccee648860f1a0bdffc4f9,
         type: 3}
@@ -1684,6 +1703,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888258263495196751, guid: d9b293efa1ccee648860f1a0bdffc4f9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251727783608155330, guid: d9b293efa1ccee648860f1a0bdffc4f9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5048777907053297983, guid: d9b293efa1ccee648860f1a0bdffc4f9,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5800105021471461987, guid: d9b293efa1ccee648860f1a0bdffc4f9,
         type: 3}

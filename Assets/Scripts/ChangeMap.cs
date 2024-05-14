@@ -15,7 +15,7 @@ public class ChangeMap : MonoBehaviour
     void Update()
     {
         // Detect Q key press to toggle texture change
-        if (Input.GetKeyDown(KeyCode.Q))
+        /*if (Input.GetKeyDown(KeyCode.Q))
         {
             volcanicActive = !volcanicActive; // Toggle state
             Material chosenMaterial = volcanicActive ? volcanicMaterial : grassMaterial;
@@ -29,10 +29,10 @@ public class ChangeMap : MonoBehaviour
                     meshRenderer.material = chosenMaterial;
                 }
             }
-        }
+        }*/
     }
 
-    // This method is called by the trigger to change the texture of the specific segment
+   /* // This method is called by the trigger to change the texture of the specific segment
     public void ChangeSegmentTexture(GameObject segment)
     {
         if (volcanicActive) // Only change the texture if volcanic mode is active
@@ -43,5 +43,5 @@ public class ChangeMap : MonoBehaviour
                 meshRenderer.material = volcanicMaterial;
             }
         }
-    }
+    }*/
 }

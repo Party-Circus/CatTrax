@@ -14,15 +14,15 @@ public class PrefabTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        /*if (Input.GetKeyDown(KeyCode.Q))
         {
             level++;
             changeLevel = true;
             Debug.Log(changeLevel);
-        }
+        }*/
     }
 
-    public void changeTerrian()
+    public int changeTerrian()
     {
         level++;
         prevLevel = level - 1;
@@ -31,6 +31,8 @@ public class PrefabTrigger : MonoBehaviour
             level = 0;
         }
         changeLevel = true;
+   
+        return level;
     }
 
     void OnTriggerEnter(Collider other)

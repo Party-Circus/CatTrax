@@ -13,6 +13,7 @@ public class CartStats : MonoBehaviour
     public int currentHealth;
     public GameOver gameOverScript;
     [HideInInspector] public bool isProtected = false;
+    public spawningObstacles spawningScript;
 
     public GameObject forcefield;
 
@@ -24,6 +25,19 @@ public class CartStats : MonoBehaviour
     public AudioSource hitAudioSource;
     public AudioClip hitSound;
     public AudioClip protectSound;
+
+    private int level;
+    public int Level
+    {
+        get { return level; }
+        set 
+        {
+            level = value;
+            Debug.Log(level);
+
+            spawningScript.switchTextures(level);
+        }
+    }
 
 
     private void OnCollisionEnter(Collision collision)
@@ -87,5 +101,8 @@ public class CartStats : MonoBehaviour
         immune = false;
         trainAnim.SetBool("Immune", false);
     }
+
+
+   
 
 }
