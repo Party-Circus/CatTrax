@@ -15,5 +15,6 @@ public class PointForScreen : MonoBehaviour
     {
         scoreText.text = score.score.ToString();
         
+
     }
 }
