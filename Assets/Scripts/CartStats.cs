@@ -12,7 +12,11 @@ public class CartStats : MonoBehaviour
         }
         set {
             hasGameStarted = value;
-            StartGame();
+            
+            if(hasGameStarted)
+            {
+                StartGame();
+            }
         }
     } 
     public bool paused = false;
@@ -23,6 +27,8 @@ public class CartStats : MonoBehaviour
     public HealthBar healthBar;
     public int currentHealth;
     public GameOver gameOverScript;
+    public spawningObstacles spawningScript;
+
     [HideInInspector] public bool isProtected = false;
 
     public GameObject forcefield;
@@ -31,6 +37,7 @@ public class CartStats : MonoBehaviour
     public bool immune = false;
 
     public Animator trainAnim;
+    public ParticleSystem smokeParticle;
 
     public AudioSource hitAudioSource;
     public AudioClip hitSound;
@@ -101,8 +108,13 @@ public class CartStats : MonoBehaviour
         trainAnim.SetBool("Immune", false);
     }
 
+    
+
     private void StartGame(){
+        Debug.Log("Start Game");
         backgroundMusic.Play();
+        smokeParticle.Play();
+        spawningScript.StartSpawning();
     }
 
 

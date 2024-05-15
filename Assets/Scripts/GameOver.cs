@@ -21,7 +21,7 @@ public class GameOver : MonoBehaviour
     public XRInteractorLineVisual LV;
 
     public void Start(){
-        cartStats.HasGameStarted = true;
+        //cartStats.HasGameStarted = true;
     }
 
     public void CheckGameOver()

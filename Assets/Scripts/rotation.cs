@@ -63,6 +63,7 @@ public class rotation : MonoBehaviour
     {
         if(!cartStats.HasGameStarted){
             cartStats.HasGameStarted = true;
+            
         }
 
         if (gameOver.IsGameover)
