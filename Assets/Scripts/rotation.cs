@@ -5,11 +5,12 @@ using UnityEngine;
 public class rotation : MonoBehaviour
 {
     public GameOver gameOver;
+    public CartStats cartStats;
 
 
-    public float baseRotationSpeed = .5f;
+    [HideInInspector] public float baseRotationSpeed = .5f;
     // Initial rotation speed
-    public float rotationSpeed = .5f;
+    public float rotationSpeed = 0f;
 
     // speed increase rate per second
     private float speedIncreaseRate = 0.2f;
@@ -60,6 +61,11 @@ public class rotation : MonoBehaviour
     //dummy
     public void SpeedUpRotation()
     {
+        if(!cartStats.HasGameStarted){
+            cartStats.HasGameStarted = true;
+            
+        }
+
         if (gameOver.IsGameover)
         {
             return;
@@ -94,7 +100,7 @@ public class rotation : MonoBehaviour
         Debug.Log("SLOWDOWN HAS STARTED");
         while (rotationSpeed > 0)
         {
-            rotationSpeed -= 0.3f * Time.deltaTime;
+            rotationSpeed -= 0.1f * Time.deltaTime;
             yield return null;
             rotationSpeed = Mathf.Max(0, rotationSpeed);
         }
