@@ -4925,12 +4925,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8104001168234681167}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1703103373 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198649275969257082, guid: 21bafee7e1b54324fb1908a9da85e17e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8104001168234681167}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1708831585
 GameObject:
   m_ObjectHideFlags: 0
@@ -11620,9 +11614,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 2158302285349175024}
-  cartStats: {fileID: 354858884110446568}
   baseRotationSpeed: 0.5
-  rotationSpeed: 0
+  rotationSpeed: 0.5
 --- !u!23 &111902424879592132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11846,18 +11839,15 @@ MonoBehaviour:
   healthBar: {fileID: 806342717}
   currentHealth: 0
   gameOverScript: {fileID: 2158302285349175024}
-  spawningScript: {fileID: 535499648716109000}
   isProtected: 0
   spawningScript: {fileID: 535499648716109000}
   forcefield: {fileID: 1775681402}
   invincFramesTime: 2
   immune: 0
   trainAnim: {fileID: 1999020825}
-  smokeParticle: {fileID: 1703103373}
   hitAudioSource: {fileID: 281553009}
   hitSound: {fileID: 8300000, guid: 8b45d68041150c94695e201c2a222c20, type: 3}
   protectSound: {fileID: 8300000, guid: 5f43b2bddba6dc54d8c37776aeebd9d8, type: 3}
-  backgroundMusic: {fileID: 8492167369875847603}
 --- !u!114 &374543711470375063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14000,7 +13990,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -23993,7 +23983,7 @@ PrefabInstance:
     - target: {fileID: 150979072480138151, guid: 5cc0372dacd318442a39a04494115729,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 356567498105116376, guid: 5cc0372dacd318442a39a04494115729,
         type: 3}
@@ -27975,7 +27965,7 @@ PrefabInstance:
     - target: {fileID: 198649275969257082, guid: 21bafee7e1b54324fb1908a9da85e17e,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198649275969257082, guid: 21bafee7e1b54324fb1908a9da85e17e,
         type: 3}
@@ -28549,7 +28539,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 73b598bb080df754597bdf520b30e8d7, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.279
   m_Pitch: 1
   Loop: 1

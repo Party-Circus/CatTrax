@@ -4,21 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CartStats : MonoBehaviour
 {
-
-    private bool hasGameStarted = false;
-    public bool HasGameStarted {
-        get {
-            return hasGameStarted;
-        }
-        set {
-            hasGameStarted = value;
-            
-            if(hasGameStarted)
-            {
-                StartGame();
-            }
-        }
-    } 
     public bool paused = false;
     public Timer timer;
     public int hp;
@@ -27,9 +12,8 @@ public class CartStats : MonoBehaviour
     public HealthBar healthBar;
     public int currentHealth;
     public GameOver gameOverScript;
-    public spawningObstacles spawningScript;
-
     [HideInInspector] public bool isProtected = false;
+    public spawningObstacles spawningScript;
 
     public GameObject forcefield;
 
@@ -37,13 +21,23 @@ public class CartStats : MonoBehaviour
     public bool immune = false;
 
     public Animator trainAnim;
-    public ParticleSystem smokeParticle;
 
     public AudioSource hitAudioSource;
     public AudioClip hitSound;
     public AudioClip protectSound;
 
-    public AudioSource backgroundMusic;
+    private int level;
+    public int Level
+    {
+        get { return level; }
+        set 
+        {
+            level = value;
+            Debug.Log(level);
+
+            spawningScript.switchTextures(level);
+        }
+    }
 
 
     private void OnCollisionEnter(Collision collision)
@@ -108,14 +102,7 @@ public class CartStats : MonoBehaviour
         trainAnim.SetBool("Immune", false);
     }
 
-    
 
-    private void StartGame(){
-        
-        backgroundMusic.Play();
-        smokeParticle.Play();
-        spawningScript.StartSpawning();
-    }
-
+   
 
 }
