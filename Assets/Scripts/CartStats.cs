@@ -111,7 +111,7 @@ public class CartStats : MonoBehaviour
     
 
     private void StartGame(){
-        Debug.Log("Start Game");
+        
         backgroundMusic.Play();
         smokeParticle.Play();
         spawningScript.StartSpawning();
