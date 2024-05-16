@@ -11,10 +11,11 @@ public class LevelSlow : MonoBehaviour
 
     public ParticleSystem brakeSparks;
     public ParticleSystem trainSparks;
+    public AudioSource audioSource;
 
     void Start()
     {
-        Debug.Log("Lever Script");
+        
     }
 
    
@@ -25,17 +26,27 @@ public class LevelSlow : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+        Debug.Log("Lever Script");
         rotScript.SlowDownRotation();
 
+
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+
         trainSparks.Play();
-        brakeSparks.Play();
+        //brakeSparks.Play();
     }
 
     void OnTriggerExit(Collider other)
     {
         trainSparks.Stop();
-        brakeSparks.Stop();
+        //brakeSparks.Stop();
+        audioSource.Stop();
+        
     }
+
 
 
 }
