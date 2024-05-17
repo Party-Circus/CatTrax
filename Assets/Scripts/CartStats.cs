@@ -115,6 +115,7 @@ public class CartStats : MonoBehaviour
         backgroundMusic.Play();
         smokeParticle.Play();
         spawningScript.StartSpawning();
+        trainAnim.SetBool("gameStarted", true);
     }
 
 

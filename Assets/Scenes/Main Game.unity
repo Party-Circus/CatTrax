@@ -25479,6 +25479,7 @@ GameObject:
   - component: {fileID: 6832463906811303905}
   - component: {fileID: 6832463906811303904}
   - component: {fileID: 6832463906811303903}
+  - component: {fileID: 6832463906811303906}
   m_Layer: 0
   m_Name: Void Kitty!
   m_TagString: Untagged
@@ -25686,6 +25687,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &6832463906811303906
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6832463906811303902}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec89cf68fe2b3f84cadcdc97cbab72b4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &6848667274327319770
 Transform:
   m_ObjectHideFlags: 0
@@ -25812,7 +25834,7 @@ Transform:
   m_GameObject: {fileID: 6457251353179019499}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5751123, y: -0.39364663, z: -0.40523773, w: 0.59166765}
-  m_LocalPosition: {x: -0.000002444274, y: 3.6703813, z: 0.22897798}
+  m_LocalPosition: {x: -0.16845642, y: 3.648647, z: -0.07674855}
   m_LocalScale: {x: 150.37108, y: 140.73763, z: 150.37108}
   m_ConstrainProportionsScale: 0
   m_Children:
