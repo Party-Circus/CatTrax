@@ -65,37 +65,37 @@ public class Cart_Move : MonoBehaviour
     public IEnumerator CartSwitchLeft() 
     {
 
-        canInput = false;
+        //canInput = false;
         transform.SetPositionAndRotation(leftPos, Quaternion.identity); // Move left by 4 units
 
         switchtrack.PlayOneShot(switchsound);
 
-        yield return new WaitForSeconds(.3f);
-        canInput = true;
+        yield return new WaitForSeconds(.1f);
+        //canInput = true;
 
     }
 
     public IEnumerator CartSwitchMiddle()
     {
-        canInput = false;
-        transform.SetPositionAndRotation(centerPos, Quaternion.identity); // Move left by 4 units
+        //canInput = false;
+        transform.SetPositionAndRotation(centerPos, Quaternion.identity); 
 
         switchtrack.PlayOneShot(switchsound);
 
-        yield return new WaitForSeconds(.3f);
-        canInput = true;
+        yield return new WaitForSeconds(.1f);
+        //canInput = true;
     }
 
     public IEnumerator CartSwitchRight()
     {
 
-        canInput = false;
+        //canInput = false;
         transform.SetPositionAndRotation(rightPos, Quaternion.identity); // Move left by 4 units
 
         switchtrack.PlayOneShot(switchsound);
 
-        yield return new WaitForSeconds(.3f);
-        canInput = true;
+        yield return new WaitForSeconds(.1f);
+        //canInput = true;
 
     }
 
