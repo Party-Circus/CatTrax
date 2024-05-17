@@ -5563,7 +5563,7 @@ PrefabInstance:
     - target: {fileID: 995967828298692747, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
       propertyPath: m_Radius
-      value: 0.9
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2919094185683980151, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
@@ -5625,7 +5625,7 @@ PrefabInstance:
     - target: {fileID: 5867623900934578590, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
       propertyPath: m_Radius
-      value: 0.9
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5875603707338886196, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
@@ -11828,7 +11828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 2158302285349175024}
-  cartStats: {fileID: 354858884110446568}
+  cartStats: {fileID: 0}
   baseRotationSpeed: 0.5
   rotationSpeed: 0
 --- !u!23 &111902424879592132
@@ -12056,7 +12056,6 @@ MonoBehaviour:
   gameOverScript: {fileID: 2158302285349175024}
   spawningScript: {fileID: 535499648716109000}
   isProtected: 0
-  spawningScript: {fileID: 535499648716109000}
   forcefield: {fileID: 1775681402}
   invincFramesTime: 2
   immune: 0

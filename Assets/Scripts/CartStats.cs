@@ -30,6 +30,7 @@ public class CartStats : MonoBehaviour
     public spawningObstacles spawningScript;
 
     [HideInInspector] public bool isProtected = false;
+    
 
     public GameObject forcefield;
 
@@ -43,6 +44,18 @@ public class CartStats : MonoBehaviour
     public AudioClip hitSound;
     public AudioClip protectSound;
 
+    private int level;
+    public int Level
+    {
+        get { return level; }
+        set 
+        {
+            level = value;
+            Debug.Log(level);
+
+            spawningScript.switchTextures(level);
+        }
+    }
     public AudioSource backgroundMusic;
 
 
