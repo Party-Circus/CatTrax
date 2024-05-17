@@ -89,5 +89,14 @@ public class ChangeTracks : MonoBehaviour
             // Additional functionality
             StartCoroutine(cartMove.CartSwitchRight());
         }
+        else if (other.CompareTag("MiddleSide"))
+        {
+            Debug.Log("Lever entered Middle Trigger");
+            // Trigger the bell animation
+            //rightBellAnimator.SetTrigger("Ring");
+            //bellSound2.Play();
+            // Additional functionality
+            StartCoroutine(cartMove.CartSwitchMiddle());
+        }
     }
 }
