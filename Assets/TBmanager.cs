@@ -13,8 +13,9 @@ public class TBmanager : MonoBehaviour
 
 
     //for the speed canvas
-    private bool speedCheck;
-    private bool breakCheck;
+    [SerializeField] WhistleSpeed WS;//come from WhistleSpeed script in the speed trigger of the Whistle Gameobject
+    [SerializeField] LevelSlow LS;//come from LevelSlow script in the slow trigger of the Break gameobject
+
 
 
     // Start is called before the first frame update
@@ -26,6 +27,9 @@ public class TBmanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(LS.hasSlow && WS.hasTouched)
+        {
+            SpeedCanvas.enabled = false;
+        }
     }
 }

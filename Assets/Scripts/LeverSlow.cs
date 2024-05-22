@@ -13,6 +13,9 @@ public class LevelSlow : MonoBehaviour
     public ParticleSystem trainSparks;
     public AudioSource audioSource;
 
+    //boolean added for tutorial, should not break anything :)
+    public bool hasSlow = false;
+
     void Start()
     {
         
@@ -29,6 +32,7 @@ public class LevelSlow : MonoBehaviour
         Debug.Log("Lever Script");
         rotScript.SlowDownRotation();
 
+        hasSlow = true;
 
         if (!audioSource.isPlaying)
         {
