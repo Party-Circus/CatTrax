@@ -12,6 +12,10 @@ public class PrefabTrigger : MonoBehaviour
 
     public Transform child;
 
+    public AchievementManager achievementManager;
+
+
+
     private void Update()
     {
         /*if (Input.GetKeyDown(KeyCode.Q))
@@ -26,6 +30,9 @@ public class PrefabTrigger : MonoBehaviour
     {
         level++;
         prevLevel = level - 1;
+        //string lol = tags[0];
+        //achievementManager.UnlockAchievement(AchievementID.lol);
+        //Debug.Log(achievementManager.isAchievementUnlocked);
 
         if(level >= tags.Length){
             level = 0;
