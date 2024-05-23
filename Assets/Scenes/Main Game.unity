@@ -6491,10 +6491,40 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1711745560995812658, guid: ceebcce0386d9464fafb8011e715b5dc,
         type: 3}
+    - target: {fileID: 3950715948209116136, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_HapticHoverEnterDuration
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950715948209116136, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_HapticHoverEnterIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950715948209116136, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_PlayHapticsOnHoverEntered
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3972846902495094604, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4102756943011887726, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_HapticHoverEnterDuration
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4102756943011887726, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_HapticHoverEnterIntensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4102756943011887726, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_PlayHapticsOnHoverEntered
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4300262725819848997, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
