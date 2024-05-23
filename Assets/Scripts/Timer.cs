@@ -11,6 +11,8 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI Timertxt;
     public GameOver GameOverScript;
 
+    public bool timerStarted;
+
     // Update is called once per frame
     void Update()
     {

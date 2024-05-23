@@ -13,11 +13,16 @@ public class GameOver : MonoBehaviour
     public rotation rotation;
     private float slowDownRate;
     public bool IsGameover = false;
+   
 
 
     public XRRayInteractor ray;
     public LineRenderer LR;
     public XRInteractorLineVisual LV;
+
+    public void Start(){
+        //cartStats.HasGameStarted = true;
+    }
 
     public void CheckGameOver()
     {

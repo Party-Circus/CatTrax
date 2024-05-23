@@ -49,6 +49,12 @@ public class spawningObstacles : MonoBehaviour
            
         }
 
+        
+    }
+
+    public void StartSpawning()
+    {
+        baseSpawnTimer = 1;
         StartCoroutine(Spawner(baseSpawnTimer));
     }
 
@@ -62,6 +68,7 @@ public class spawningObstacles : MonoBehaviour
 
     IEnumerator Spawner(float spawnTimer){
 
+        Debug.Log("Waiting for " + spawnTimer);
         yield return new WaitForSeconds(spawnTimer);
 
         //if paused wait until unpaused
