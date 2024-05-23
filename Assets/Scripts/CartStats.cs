@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CartStats : MonoBehaviour
 {
-    public AchievementManager AM;
+    public AchievementSystem AS;
 
     private bool hasGameStarted = false;
     public bool HasGameStarted {
@@ -55,7 +55,7 @@ public class CartStats : MonoBehaviour
             Debug.Log(level);
 
             spawningScript.switchTextures(level);
-            LevelClearAchievements();
+            AS.LevelClearAchievements();
         }
     }
     public AudioSource backgroundMusic;
@@ -132,32 +132,4 @@ public class CartStats : MonoBehaviour
         spawningScript.StartSpawning();
         trainAnim.SetBool("gameStarted", true);
     }
-
-    public void LevelClearAchievements()
-    {
-        switch (level)
-        {
-            case 1:
-                AM.UnlockAchievement(AchievementID.grass);
-                Debug.Log("Grass" + AM.isAchievementUnlocked(AchievementID.grass));
-                break;
-            case 2:
-                AM.UnlockAchievement(AchievementID.wildwest);
-                Debug.Log("Wildwest"+AM.isAchievementUnlocked(AchievementID.wildwest));
-                break;
-            case 3:
-                AM.UnlockAchievement(AchievementID.volcano);
-                Debug.Log("volcano" + AM.isAchievementUnlocked(AchievementID.volcano));
-                break;
-            case 4:
-                AM.UnlockAchievement(AchievementID.tunnel);
-                Debug.Log("tunnel" + AM.isAchievementUnlocked(AchievementID.tunnel));
-                break;
-            case 0:
-                AM.UnlockAchievement(AchievementID.gemstone);
-                Debug.Log("Gemstone" + AM.isAchievementUnlocked(AchievementID.gemstone));
-                break;
-        }
-    }
-
 }
