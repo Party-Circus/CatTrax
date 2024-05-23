@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: New Achievement Database
   m_EditorClassIdentifier: 
   achievements:
+  - id: Grass
+    title: The Grass is Greener Elsewhere
+    description: Clear the Grasslands
+    hint: Clear the Grasslands
+    quote: Touching grass was overrated anyway
   - id: Hello
     title: Goodbye
     description: This World

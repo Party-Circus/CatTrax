@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class AchievementManager : MonoBehaviour
@@ -8,15 +9,21 @@ public class AchievementManager : MonoBehaviour
     public AchievementDatabase database;
     public AchievementID achievementToShow;
 
+    public TMP_Text WantedAchievementName;
+    public TMP_Text WantedAchievementHint;
+
     //An object which contains the achievement Data
     public GameObject achievementItemPrefab;
 
     [SerializeField][HideInInspector]
     private List<AchievementItemController> achievementItems;
 
+
+
     void Start()
     {
         LoadAchievementsTable();
+        ShowNextAchievement();
     }
 
 
@@ -42,6 +49,18 @@ public class AchievementManager : MonoBehaviour
         }
     }
 
+    private void ShowNextAchievement()
+    {
+        foreach (AchievementItemController item in achievementItems)
+        {
+            if(!item.unlocked){
+                WantedAchievementName.text = item.achievement.title;
+                WantedAchievementHint.text = item.achievement.hint;
+                return;
+            }
+        }
+    }
+
     public void UnlockAchievement(AchievementID achievement) 
     {
         AchievementItemController item = achievementItems[(int)achievement];
@@ -53,6 +72,7 @@ public class AchievementManager : MonoBehaviour
         PlayerPrefs.SetInt(item.achievement.id, 1);
         item.unlocked = true;
         item.RefreshView();
+        ShowNextAchievement();
     }
 
     [ContextMenu(" ClearAchievementsInPlayerPrefs()")]
