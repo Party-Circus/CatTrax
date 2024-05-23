@@ -33,7 +33,7 @@ public class rotation : MonoBehaviour
     void Start()
     {
         //achievementManager.UnlockAchievement(AchievementID.goolik);
-        Debug.Log(achievementManager.isAchievementUnlocked(AchievementID.goolik));
+       // Debug.Log(achievementManager.isAchievementUnlocked(AchievementID.goolik));
     }
 
     // Update is called once per frame
