@@ -123,6 +123,61 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &41278104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 41278106}
+  - component: {fileID: 41278105}
+  m_Layer: 0
+  m_Name: AchievementItem(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &41278105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41278104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 0}
+  titleLabel: {fileID: 0}
+  descriptionLabel: {fileID: 0}
+  unlocked: 0
+  achievement:
+    id: goolik
+    title: sdsd
+    description: This World
+    hint: asd
+    quote: sd
+--- !u!4 &41278106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41278104}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 696131427}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &49100333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8583984748092656686, guid: 9036c1d52c5addb4f97b2d6938256ef9,
@@ -1681,6 +1736,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 563124929}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &696131425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696131427}
+  - component: {fileID: 696131426}
+  m_Layer: 0
+  m_Name: '[Managers]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &696131426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696131425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8e3f7eee33d514daa0c42812213e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  database: {fileID: 11400000, guid: 3eca5fecbe2431244be9e9ec226bf5c3, type: 2}
+  achievementToShow: 0
+  achievementItemPrefab: {fileID: 6330083310758028520, guid: ff29a8fc129aef845bcce5a6b5af6da9,
+    type: 3}
+  achievementItems:
+  - {fileID: 1107057946}
+  - {fileID: 41278105}
+--- !u!4 &696131427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696131425}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000015258789, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1107057947}
+  - {fileID: 41278106}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707698931
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,6 +3251,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.001, y: 0.001, z: 0.004}
   m_Center: {x: 0.006, y: 0.003, z: 0.003}
+--- !u!1 &1107057945
 --- !u!1 &1094774841
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,6 +3260,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+  - component: {fileID: 1107057947}
+  - component: {fileID: 1107057946}
+  m_Layer: 0
+  m_Name: AchievementItem(Clone)
   - component: {fileID: 1094774842}
   - component: {fileID: 1094774844}
   - component: {fileID: 1094774843}
@@ -3162,12 +3275,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1107057946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107057945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 0}
+  titleLabel: {fileID: 0}
+  descriptionLabel: {fileID: 0}
+  unlocked: 0
+  achievement:
+    id: Hello
+    title: Goodbye
+    description: This World
+    hint: asd
+    quote: sd
+--- !u!4 &1107057947
 --- !u!4 &1094774842
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107057945}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 696131427}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_GameObject: {fileID: 1094774841}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.9997563, z: -0, w: 0.022079377}
@@ -12764,6 +12910,7 @@ MonoBehaviour:
   cartStats: {fileID: 354858884110446568}
   baseRotationSpeed: 0.5
   rotationSpeed: 0
+  achievementManager: {fileID: 696131426}
 --- !u!23 &111902424879592132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32167,3 +32314,4 @@ SceneRoots:
   - {fileID: 1299811397}
   - {fileID: 1391251471}
   - {fileID: 330974347}
+  - {fileID: 696131427}

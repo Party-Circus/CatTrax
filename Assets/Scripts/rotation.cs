@@ -22,6 +22,8 @@ public class rotation : MonoBehaviour
     private float minRotationSpeed = 0.1f;
     private float maxRotationSpeed = 1.9f;
 
+    public AchievementManager achievementManager;
+
     //public spawningObstacles spawnScript;
 
 
@@ -30,7 +32,8 @@ public class rotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //achievementManager.UnlockAchievement(AchievementID.goolik);
+        Debug.Log(achievementManager.isAchievementUnlocked(AchievementID.goolik));
     }
 
     // Update is called once per frame
