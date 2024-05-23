@@ -31,8 +31,6 @@ public class PrefabTrigger : MonoBehaviour
         level++;
         prevLevel = level - 1;
        
-        achievementManager.UnlockAchievement(AchievementID.Grass);
-        Debug.Log(achievementManager.isAchievementUnlocked(AchievementID.Grass));
 
         if(level >= tags.Length){
             level = 0;
