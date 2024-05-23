@@ -60,6 +60,8 @@ public class ChangeTracks : MonoBehaviour
     public AudioSource bellSound;
     public AudioSource bellSound2;
 
+    private bool gameplayStarted = false;
+
     private void Start()
     {
         // Assuming the bell is a direct child of the collider game objects
@@ -79,6 +81,7 @@ public class ChangeTracks : MonoBehaviour
             //bellSound.Play();
             // Additional functionality
             StartCoroutine(cartMove.CartSwitchLeft());
+            gameplayStarted = true;
         }
         else if (other.CompareTag("RightSide"))
         {
@@ -88,8 +91,9 @@ public class ChangeTracks : MonoBehaviour
             //bellSound2.Play();
             // Additional functionality
             StartCoroutine(cartMove.CartSwitchRight());
+            gameplayStarted = true;
         }
-        else if (other.CompareTag("MiddleSide"))
+        else if (other.CompareTag("MiddleSide") && gameplayStarted)
         {
             Debug.Log("Lever entered Middle Trigger");
             // Trigger the bell animation
