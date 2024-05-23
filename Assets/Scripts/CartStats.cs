@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CartStats : MonoBehaviour
 {
+    public AchievementSystem AS;
 
     private bool hasGameStarted = false;
     public bool HasGameStarted {
@@ -44,7 +45,7 @@ public class CartStats : MonoBehaviour
     public AudioClip hitSound;
     public AudioClip protectSound;
 
-    private int level;
+    public int level;
     public int Level
     {
         get { return level; }
@@ -54,6 +55,7 @@ public class CartStats : MonoBehaviour
             Debug.Log(level);
 
             spawningScript.switchTextures(level);
+            AS.LevelClearAchievements();
         }
     }
     public AudioSource backgroundMusic;
@@ -130,6 +132,4 @@ public class CartStats : MonoBehaviour
         spawningScript.StartSpawning();
         trainAnim.SetBool("gameStarted", true);
     }
-
-
 }

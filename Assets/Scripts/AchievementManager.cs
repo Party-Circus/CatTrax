@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class AchievementManager : MonoBehaviour
 {
-
     public AchievementDatabase database;
     public AchievementID achievementToShow;
 
