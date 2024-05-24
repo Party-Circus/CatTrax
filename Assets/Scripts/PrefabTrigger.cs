@@ -19,7 +19,9 @@ public class PrefabTrigger : MonoBehaviour
 
     public AchievementManager achievementManager;
 
-
+    void Start(){
+        RenderSettings.skybox.SetFloat("_Exposure", 1f);
+    }
 
     private void Update()
     {
@@ -61,9 +63,11 @@ public class PrefabTrigger : MonoBehaviour
             if (other.CompareTag(tags[level]))
             {
                 if(!lightChanged){
-                   //evelSettings levelSet = other.transform.parent.GetComponent<LevelSettings>();
-                   //StartCoroutine(AdjustTheLights(levelSet.skyboxExposure));
-                   //RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
+                   LevelSettings levelSet = other.transform.parent.GetComponent<LevelSettings>();
+                   StartCoroutine(AdjustTheLights(levelSet.brightness));
+                   StartCoroutine(AdjustTheExposure(levelSet.skyboxExposure));
+                   StartCoroutine(AdjustTheWarmth(levelSet.warmness));
+                   
                    
                    lightChanged = true;
                 }
@@ -77,16 +81,42 @@ public class PrefabTrigger : MonoBehaviour
         
     }
 
-    IEnumerator AdjustTheLights(float targetExposure)
+    IEnumerator AdjustTheLights(float brightness)
     {
-        while (currentExposure != targetExposure)
+        yield return new WaitForSeconds(2);
+
+        while (lights.intensity != brightness)
         {
-            Debug.Log("adjusting light");
-            currentExposure = Mathf.Lerp(currentExposure, targetExposure, 1f);
-            RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
+            lights.intensity = Mathf.Lerp(lights.intensity, brightness, .8f);
             yield return new WaitForEndOfFrame();
         }
     }
+
+    IEnumerator AdjustTheExposure(float targetExposure)
+    {
+        yield return new WaitForSeconds(2);
+
+        while (currentExposure != targetExposure)
+        {
+            currentExposure = Mathf.Lerp(currentExposure, targetExposure, .8f);
+            RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
+            DynamicGI.UpdateEnvironment();
+            yield return new WaitForEndOfFrame();
+        }
+    }
+
+    IEnumerator AdjustTheWarmth(float warmness)
+    {
+        yield return new WaitForSeconds(2);
+
+        while (lights.colorTemperature != warmness)
+        {
+            lights.colorTemperature = Mathf.Lerp(lights.colorTemperature, warmness, .8f);
+    
+            yield return new WaitForEndOfFrame();
+        }
+    }
+
 
   //lights.temperature != warmness && lights.intensity != brightness && 
 }
