@@ -66,8 +66,9 @@ public class PrefabTrigger : MonoBehaviour
                    LevelSettings levelSet = other.transform.parent.GetComponent<LevelSettings>();
                    StartCoroutine(AdjustTheLights(levelSet.brightness));
                    StartCoroutine(AdjustTheExposure(levelSet.skyboxExposure));
+                   StartCoroutine(AdjustTheWarmth(levelSet.warmness));
                    
-                   DynamicGI.UpdateEnvironment();
+                   
                    lightChanged = true;
                 }
 
@@ -100,6 +101,18 @@ public class PrefabTrigger : MonoBehaviour
             currentExposure = Mathf.Lerp(currentExposure, targetExposure, .8f);
             RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
             DynamicGI.UpdateEnvironment();
+            yield return new WaitForEndOfFrame();
+        }
+    }
+
+    IEnumerator AdjustTheWarmth(float warmness)
+    {
+        yield return new WaitForSeconds(2);
+
+        while (lights.colorTemperature != warmness)
+        {
+            lights.colorTemperature = Mathf.Lerp(lights.colorTemperature, warmness, .8f);
+    
             yield return new WaitForEndOfFrame();
         }
     }

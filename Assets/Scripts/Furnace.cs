@@ -25,7 +25,7 @@ public class Furnace : MonoBehaviour
     // Function to start the furnace burning
     public void StartBurning()
     {
-        timer.timevalue += amountOfTimeAdded;
+        
         
         StartCoroutine(Burn());
         
@@ -39,6 +39,10 @@ public class Furnace : MonoBehaviour
         isBurning = true; // Set the furnace to burning state
         currentBurnTime = 0f; // Reset current burn time
 
+        if (coal != null)
+        {
+            timer.timevalue += amountOfTimeAdded;
+        }
         if (cardboard != null)
         {
             cartS.isProtected = true;

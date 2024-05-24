@@ -15793,9 +15793,9 @@ MonoBehaviour:
   AS: {fileID: 1576715909}
   paused: 0
   timer: {fileID: 806342718}
-  hp: 999
+  hp: 5
   score: 0
-  initialTime: 999
+  initialTime: 60
   healthBar: {fileID: 806342717}
   currentHealth: 5
   gameOverScript: {fileID: 2158302285349175024}
@@ -32037,7 +32037,7 @@ MonoBehaviour:
   rotScript: {fileID: 36926378290154864}
   stats: {fileID: 354858884110446568}
   terrianScript: {fileID: 374543711470375063}
-  levelLengthInInt: 10000
+  levelLengthInInt: 20000
 --- !u!1 &5615763176129957465
 GameObject:
   m_ObjectHideFlags: 0
