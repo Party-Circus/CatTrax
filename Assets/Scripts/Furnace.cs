@@ -45,6 +45,7 @@ public class Furnace : MonoBehaviour
         }
         if (cardboard != null)
         {
+            timer.timevalue += amountOfTimeAdded-2;
             cartS.isProtected = true;
             cartS.forcefield.SetActive(true);
         }
