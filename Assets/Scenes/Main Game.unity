@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18283726, g: 0.2285389, b: 0.30697662, a: 1}
+  m_IndirectSpecularColor: {r: 0.18283752, g: 0.22853921, b: 0.30697775, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -675,7 +675,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1885363827}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -717,7 +717,7 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
-  targetTag: 
+  targetTag: Switch
 --- !u!1 &233666241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,7 +1183,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 330974343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e72de3be8ee4384bb3fb6dcc23e02b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_ShowInteractableHoverMeshes: 0
+  m_ShowInteractableHoverMeshes: 1
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
   m_SocketActive: 1
@@ -1234,6 +1234,7 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+  targetTag: Switch
 --- !u!4 &354396177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d290403a8497ee4a934789d9be0a683,
@@ -1363,6 +1364,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d290403a8497ee4a934789d9be0a683,
     type: 3}
   m_PrefabInstance: {fileID: 5422185159330966040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &488719911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5733097052584178096, guid: 2d6e0526f0589fb4d96fd2a3e1054284,
+    type: 3}
+  m_PrefabInstance: {fileID: 2421254048132418886}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &530960917
 PrefabInstance:
@@ -1655,6 +1662,73 @@ Transform:
   - {fileID: 6625580452155195703}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &736461933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3534449267846433378, guid: 2d6e0526f0589fb4d96fd2a3e1054284,
+    type: 3}
+  m_PrefabInstance: {fileID: 2421254048132418886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &736461939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736461933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e72de3be8ee4384bb3fb6dcc23e02b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 488719911}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+  targetTag: Switch
 --- !u!1 &741376914
 GameObject:
   m_ObjectHideFlags: 0
@@ -20514,7 +20588,7 @@ PrefabInstance:
     - target: {fileID: 1041452335640547910, guid: 2d6e0526f0589fb4d96fd2a3e1054284,
         type: 3}
       propertyPath: m_ShowInteractableHoverMeshes
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4028914745977667035, guid: 2d6e0526f0589fb4d96fd2a3e1054284,
         type: 3}
@@ -20571,6 +20645,11 @@ PrefabInstance:
       propertyPath: cartMove
       value: 
       objectReference: {fileID: 8465574134775387243}
+    - target: {fileID: 5827573222702640793, guid: 2d6e0526f0589fb4d96fd2a3e1054284,
+        type: 3}
+      propertyPath: m_TagString
+      value: Switch
+      objectReference: {fileID: 0}
     - target: {fileID: 8574313051945168439, guid: 2d6e0526f0589fb4d96fd2a3e1054284,
         type: 3}
       propertyPath: m_Name
@@ -20578,10 +20657,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8379348914395682120, guid: 2d6e0526f0589fb4d96fd2a3e1054284, type: 3}
+    - {fileID: 1041452335640547910, guid: 2d6e0526f0589fb4d96fd2a3e1054284, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4845642007633341672, guid: 2d6e0526f0589fb4d96fd2a3e1054284, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3534449267846433378, guid: 2d6e0526f0589fb4d96fd2a3e1054284,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 736461939}
   m_SourcePrefab: {fileID: 100100000, guid: 2d6e0526f0589fb4d96fd2a3e1054284, type: 3}
 --- !u!33 &2423184683151238150
 MeshFilter:
