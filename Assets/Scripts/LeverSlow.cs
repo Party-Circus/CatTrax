@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LevelSlow : MonoBehaviour
 {
-
+    public CartStats cartStats;
     public rotation rotScript;
     //public Rotation rotScript; // Assuming Rotation is the correct class 
 
@@ -29,18 +29,21 @@ public class LevelSlow : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        Debug.Log("Lever Script");
-        rotScript.SlowDownRotation();
-
-        hasSlow = true;
-
-        if (!audioSource.isPlaying)
+        if (cartStats.HasGameStarted)
         {
-            audioSource.Play();
-        }
+            Debug.Log("Lever Script");
+            rotScript.SlowDownRotation();
+    
+            hasSlow = true;
 
-        trainSparks.Play();
-        //brakeSparks.Play();
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+
+            trainSparks.Play();
+            //brakeSparks.Play();
+        }
     }
 
     void OnTriggerExit(Collider other)

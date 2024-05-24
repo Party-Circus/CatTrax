@@ -1,0 +1,17 @@
+public enum AchievementID {
+	grass,
+	wildwest,
+	volcano,
+	tunnel,
+	gemstone,
+	hundredthousandpoints,
+	firsttimedeath,
+	millionaire,
+	nomorefuel,
+	rattrax,
+	cheetah,
+	ironman,
+	catintofurnance,
+	ratintofurnance,
+	secretlevel,
+}

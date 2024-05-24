@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b005f3bdb1cce424cac451efe0b9e61a, type: 3}
+  m_Name: New Achievement Database
+  m_EditorClassIdentifier: 
+  achievements:
+  - id: grass
+    title: The Grass is Greener Elsewhere
+    description: Clear the Grasslands
+    hint: Reach 10,000 Points
+    quote: Touching grass was overrated anyway
+  - id: wildwest
+    title: See You Later Cowboy
+    description: Clear the Wild West
+    hint: Reach 20,000 points
+    quote: The train's name is Friday
+  - id: volcano
+    title: End of the World
+    description: Clear the Eruption
+    hint: Reach 30,000 points
+    quote: n/a
+  - id: tunnel
+    title: Where are we Going?
+    description: Clear the Tunnel
+    hint: Reach 40,000 points
+    quote: n/a
+  - id: gemstone
+    title: DIAMONDS!!!
+    description: Clear the Underground Cavern
+    hint: Reach 50,000 points
+    quote: Now we can mine obsidean
+  - id: hundredthousandpoints
+    title: 6 Figure Salary
+    description: Reach 100,000 points
+    hint: Reach 100,000 Points
+    quote: n/a
+  - id: firsttimedeath
+    title: You can never escape Death
+    description: Die for your first time
+    hint: You'll get this eventually
+    quote: Its a good thing you have 9 lives
+  - id: millionaire
+    title: Millionaire!
+    description: Reach 1,000,000 points
+    hint: Reach 1,000,000 points
+    quote: n/a
+  - id: nomorefuel
+    title: WE RAN OUT OF FUEL!!!
+    description: Lose to Time
+    hint: Make sure timer doesn't hit 0
+    quote: n/a
+  - id: rattrax
+    title: RatTrax
+    description: Use Rat as playable conductor
+    hint: See those rats there? Maybe you can use them...
+    quote: I thought rats were chefs not train conductors!
+  - id: cheetah
+    title: Cheetah
+    description: Played at max speed for 5 minutes
+    hint: Go full speed and don't brake
+    quote: n/a
+  - id: ironman
+    title: Ironman
+    description: Clear all levels without getting hit
+    hint: Clear all levels without getting hit
+    quote: Welcome to the avengers
+  - id: catintofurnance
+    title: You are a terrible person
+    description: Throw a cat into the furnance
+    hint: DO NOT USE ANIMALS AS FUEL
+    quote: n/a
+  - id: ratintofurnance
+    title: Good Riddance
+    description: Throw a rat into the furnance
+    hint: If you're running out of fuel, there is one thing you can use...
+    quote: n/a
+  - id: secretlevel
+    title: Where am I...
+    description: Transport into the secret level
+    hint: There's one more level you haven't finished...
+    quote: n/a
