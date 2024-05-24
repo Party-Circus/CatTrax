@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18283752, g: 0.22853921, b: 0.30697775, a: 1}
+  m_IndirectSpecularColor: {r: 0.14065114, g: 0.17579684, b: 0.23613326, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2290,7 +2290,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b6588c960a8a2b14381284d225c2780e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.8
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -23984,6 +23984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1041452335640547910, guid: 2d6e0526f0589fb4d96fd2a3e1054284, type: 3}
+    - {fileID: 8379348914395682120, guid: 2d6e0526f0589fb4d96fd2a3e1054284, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4845642007633341672, guid: 2d6e0526f0589fb4d96fd2a3e1054284, type: 3}
     m_AddedGameObjects: []
