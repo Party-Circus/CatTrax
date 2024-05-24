@@ -14,4 +14,5 @@ public enum AchievementID {
 	catintofurnance,
 	ratintofurnance,
 	secretlevel,
+	yuy,
 }

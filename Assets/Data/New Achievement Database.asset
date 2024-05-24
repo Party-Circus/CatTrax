@@ -88,3 +88,8 @@ MonoBehaviour:
     description: Transport into the secret level
     hint: There's one more level you haven't finished...
     quote: n/a
+  - id: yuy
+    title: ty
+    description: tyr
+    hint: try
+    quote: try
