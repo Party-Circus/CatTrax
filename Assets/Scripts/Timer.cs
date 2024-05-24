@@ -12,22 +12,32 @@ public class Timer : MonoBehaviour
     public GameOver GameOverScript;
 
     public bool timerStarted;
+    public bool gameStarted = false;
 
     // Update is called once per frame
+
+    public void StartGame()
+    {
+        gameStarted = true;
+    }
+
     void Update()
     {
-        if (timevalue > 0)
+        if(gameStarted)
         {
-            timevalue -= Time.deltaTime;
-        }
-        else
-        {
-            timevalue = 0;
-            if (!GameOverScript.IsGameover)
+            if (timevalue > 0)
             {
-                GameOverScript.TriggerGameOverEffects(false);
+                timevalue -= Time.deltaTime;
             }
-                
+            else
+            {
+                timevalue = 0;
+                if (!GameOverScript.IsGameover)
+                {
+                    GameOverScript.TriggerGameOverEffects(false);
+                }
+                    
+            }
         }
         DisplayTime(timevalue);
     }
