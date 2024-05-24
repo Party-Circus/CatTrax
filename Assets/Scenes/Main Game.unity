@@ -15793,9 +15793,9 @@ MonoBehaviour:
   AS: {fileID: 1576715909}
   paused: 0
   timer: {fileID: 806342718}
-  hp: 5
+  hp: 999
   score: 0
-  initialTime: 60
+  initialTime: 999
   healthBar: {fileID: 806342717}
   currentHealth: 5
   gameOverScript: {fileID: 2158302285349175024}
