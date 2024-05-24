@@ -14666,9 +14666,9 @@ MonoBehaviour:
   AS: {fileID: 1576715909}
   paused: 0
   timer: {fileID: 806342718}
-  hp: 999
+  hp: 5
   score: 0
-  initialTime: 999
+  initialTime: 60
   healthBar: {fileID: 806342717}
   currentHealth: 0
   gameOverScript: {fileID: 2158302285349175024}
@@ -14696,13 +14696,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa69b1ebec5682f4b8b25933f12da80a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volcanicPrefab: []
   tags:
   - Grass
   - Desert
   - Volcano
   - Tunnel
   - Gem
+  lights: {fileID: 0}
   child: {fileID: 0}
   achievementManager: {fileID: 0}
 --- !u!4 &384737788878015994
