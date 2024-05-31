@@ -59,8 +59,10 @@ public class ChangeTracks : MonoBehaviour
     public Animator rightBellAnimator;
     public AudioSource bellSound;
     public AudioSource bellSound2;
+   
 
     private bool gameplayStarted = false;
+
 
     private void Start()
     {

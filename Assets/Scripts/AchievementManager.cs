@@ -17,10 +17,13 @@ public class AchievementManager : MonoBehaviour
     [SerializeField][HideInInspector]
     private List<AchievementItemController> achievementItems;
 
+    private AchievementRewardManager rewardManager;
+
 
 
     void Start()
     {
+        rewardManager = gameObject.GetComponent<AchievementRewardManager>();
         LoadAchievementsTable();
         ShowNextAchievement();
     }
@@ -72,6 +75,7 @@ public class AchievementManager : MonoBehaviour
         item.unlocked = true;
         item.RefreshView();
         ShowNextAchievement();
+        rewardManager.SpawnSpecificItem(achievement);
     }
 
     [ContextMenu(" ClearAchievementsInPlayerPrefs()")]
