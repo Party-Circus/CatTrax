@@ -67,7 +67,7 @@ public class Cart_Move : MonoBehaviour
     {
 
         //canInput = false;
-        if(gameOver.IsGameover)
+        if(!gameOver.IsGameover)
         {
             transform.SetPositionAndRotation(leftPos, Quaternion.identity); // Move left by 4 units
 
@@ -82,7 +82,7 @@ public class Cart_Move : MonoBehaviour
     public IEnumerator CartSwitchMiddle()
     {
         //canInput = false;
-        if(gameOver.IsGameover)
+        if(!gameOver.IsGameover)
         {
             transform.SetPositionAndRotation(centerPos, Quaternion.identity); 
 
@@ -97,7 +97,7 @@ public class Cart_Move : MonoBehaviour
     {
 
         //canInput = false;
-        if(gameOver.IsGameover)
+        if(!gameOver.IsGameover)
         {
             transform.SetPositionAndRotation(rightPos, Quaternion.identity); // Move left by 4 units
 
