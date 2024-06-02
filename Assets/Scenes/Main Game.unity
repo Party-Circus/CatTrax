@@ -2974,6 +2974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716d48437c17ff74b829d686ea69947d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuPanel: {fileID: 0}
+  achievementPanel: {fileID: 0}
 --- !u!114 &551383341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8737,7 +8739,7 @@ PrefabInstance:
         type: 3}
       propertyPath: lever
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 507535960}
     - target: {fileID: 352920016343014481, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
       propertyPath: whistle
@@ -8752,7 +8754,7 @@ PrefabInstance:
         type: 3}
       propertyPath: breakSound
       value: 
-      objectReference: {fileID: 1999399121}
+      objectReference: {fileID: 939274729}
     - target: {fileID: 352920016343014481, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
       propertyPath: backgroundMusic
@@ -8762,6 +8764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Radius
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2654566287926693322, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2919094185683980151, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
@@ -8884,6 +8891,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036135459834704819, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0808
+      objectReference: {fileID: 0}
+    - target: {fileID: 6036135459834704819, guid: f89dfc8d40937504ea2919f4dd31deae,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0527
       objectReference: {fileID: 0}
     - target: {fileID: 6754583840300765245, guid: f89dfc8d40937504ea2919f4dd31deae,
         type: 3}
@@ -16567,9 +16584,9 @@ MonoBehaviour:
   AS: {fileID: 1576715909}
   paused: 0
   timer: {fileID: 806342718}
-  hp: 5
+  hp: 20
   score: 0
-  initialTime: 60
+  initialTime: 180
   healthBar: {fileID: 806342717}
   currentHealth: 0
   gameOverScript: {fileID: 2158302285349175024}

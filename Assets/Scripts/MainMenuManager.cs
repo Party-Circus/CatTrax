@@ -5,11 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+
+    public GameObject mainMenuPanel;
+    public GameObject achievementPanel;
+
     public void quitButton()
     {
         Debug.Log("Bro is leaving the game!! ");
        
         Application.Quit();//Stop the normies (actual players' game)
+    }
+
+    public void goToAchievement()
+    {
+        mainMenuPanel.SetActive(false);
+        achievementPanel.SetActive(true);
+    }
+
+    public void goToMainMenu()
+    {
+        achievementPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
     }
 
     public void play()
