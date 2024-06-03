@@ -24,8 +24,15 @@ public class MainMenuManager : MonoBehaviour
 
     public void goToMainMenu()
     {
-        achievementPanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
+        if(mainMenuPanel == null)
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
+        else {
+            achievementPanel.SetActive(false);
+            mainMenuPanel.SetActive(true);
+        }
+        
     }
 
     public void play()
