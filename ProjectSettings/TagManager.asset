@@ -16,8 +16,6 @@ TagManager:
   - Gem
   - MiddleSide
   - Cat
-  - Switch
-  - MountGrab
   layers:
   - Default
   - TransparentFX
