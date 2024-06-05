@@ -13,14 +13,18 @@ public class AchievementManager : MonoBehaviour
 
     //An object which contains the achievement Data
     public GameObject achievementItemPrefab;
+    public Transform content;
 
     [SerializeField][HideInInspector]
     private List<AchievementItemController> achievementItems;
+
+    private AchievementRewardManager rewardManager;
 
 
 
     void Start()
     {
+        rewardManager = gameObject.GetComponent<AchievementRewardManager>();
         LoadAchievementsTable();
         ShowNextAchievement();
     }
@@ -37,12 +41,12 @@ public class AchievementManager : MonoBehaviour
 
         foreach (Achievement achievement in database.achievements)
         {
-            GameObject obj = Instantiate(achievementItemPrefab, transform);
+            GameObject obj = Instantiate(achievementItemPrefab, content);
             AchievementItemController item = obj.GetComponent<AchievementItemController>();
             bool unlocked = PlayerPrefs.GetInt(achievement.id, 0) == 1;
             item.unlocked = unlocked;
             item.achievement = achievement;
-            //item.RefreshView();
+            item.RefreshView();
             achievementItems.Add(item);
             
         }
@@ -72,6 +76,7 @@ public class AchievementManager : MonoBehaviour
         item.unlocked = true;
         item.RefreshView();
         ShowNextAchievement();
+        rewardManager.SpawnSpecificItem(achievement);
     }
 
     [ContextMenu(" ClearAchievementsInPlayerPrefs()")]

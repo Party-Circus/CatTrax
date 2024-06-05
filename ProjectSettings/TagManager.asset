@@ -15,6 +15,9 @@ TagManager:
   - Tunnel
   - Gem
   - MiddleSide
+  - Cat
+  - Switch
+  - MountGrab
   layers:
   - Default
   - TransparentFX

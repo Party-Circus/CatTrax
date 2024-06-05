@@ -21,6 +21,7 @@ public class Cart_Move : MonoBehaviour
     //public rotation rotScript;
 
     public bool canInput = true;
+    public GameOver gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -66,11 +67,14 @@ public class Cart_Move : MonoBehaviour
     {
 
         //canInput = false;
-        transform.SetPositionAndRotation(leftPos, Quaternion.identity); // Move left by 4 units
+        if(!gameOver.IsGameover)
+        {
+            transform.SetPositionAndRotation(leftPos, Quaternion.identity); // Move left by 4 units
 
-        switchtrack.PlayOneShot(switchsound);
+            switchtrack.PlayOneShot(switchsound);
 
-        yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.1f);
+        }
         //canInput = true;
 
     }
@@ -78,11 +82,14 @@ public class Cart_Move : MonoBehaviour
     public IEnumerator CartSwitchMiddle()
     {
         //canInput = false;
-        transform.SetPositionAndRotation(centerPos, Quaternion.identity); 
+        if(!gameOver.IsGameover)
+        {
+            transform.SetPositionAndRotation(centerPos, Quaternion.identity); 
 
-        switchtrack.PlayOneShot(switchsound);
+            switchtrack.PlayOneShot(switchsound);
 
-        yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.1f);
+        }
         //canInput = true;
     }
 
@@ -90,11 +97,14 @@ public class Cart_Move : MonoBehaviour
     {
 
         //canInput = false;
-        transform.SetPositionAndRotation(rightPos, Quaternion.identity); // Move left by 4 units
+        if(!gameOver.IsGameover)
+        {
+            transform.SetPositionAndRotation(rightPos, Quaternion.identity); // Move left by 4 units
 
-        switchtrack.PlayOneShot(switchsound);
+            switchtrack.PlayOneShot(switchsound);
 
-        yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.1f);
+        }
         //canInput = true;
 
     }

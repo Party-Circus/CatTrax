@@ -14,11 +14,10 @@ public class ChooChooTrigger : MonoBehaviour
         // Check if the handle enters the trigger and the sound has not played yet
         if (other.transform == speedTriggerTransform && !hasPlayed)
         {
-            if (audioSource != null && chooChooSound != null)
-            {
-                audioSource.PlayOneShot(chooChooSound);
-                hasPlayed = true; // Prevent the sound from playing again until handle exits
-            }
+           
+            audioSource.PlayOneShot(chooChooSound);
+            hasPlayed = true; // Prevent the sound from playing again until handle exits
+            
         }
     }
 

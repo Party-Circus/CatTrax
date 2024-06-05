@@ -8,8 +8,8 @@ using TMPro;
 public class AchievementItemController : MonoBehaviour
 {
 
-    [SerializeField] Image unlockedIcon;
-    [SerializeField] Image lockedIcon;
+    
+    [SerializeField] Image achievementIcon;
 
     [SerializeField] TMP_Text titleLabel;
     [SerializeField] TMP_Text descriptionLabel;
@@ -20,11 +20,21 @@ public class AchievementItemController : MonoBehaviour
 
     public void RefreshView()
     {
-        //titleLabel.text = achievement.title;
-        //descriptionLabel.text = achievement.description;
+        titleLabel.text = achievement.title;
+        descriptionLabel.text = achievement.description;
 
-        //unlockedIcon.enabled = unlocked;
-        //lockedIcon.enabled = !unlocked;
+        if (unlocked)
+        {
+            achievementIcon.color = Color.white;
+            titleLabel.enabled = true;
+        }
+        else
+        {
+            achievementIcon.color = Color.black;
+            titleLabel.enabled = false;
+        }
+        /*unlockedIcon.enabled = unlocked;
+        lockedIcon.enabled = !unlocked;*/
     }
 
     private void OnValidate()

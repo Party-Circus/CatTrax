@@ -100,10 +100,10 @@ public class rotation : MonoBehaviour
 
     private IEnumerator SlowMotion()
     {
-        Debug.Log("SLOWDOWN HAS STARTED");
+        
         while (rotationSpeed > 0)
         {
-            rotationSpeed -= 0.1f * Time.deltaTime;
+            rotationSpeed -= 1f * Time.deltaTime;
             yield return null;
             rotationSpeed = Mathf.Max(0, rotationSpeed);
         }
