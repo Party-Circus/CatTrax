@@ -41,7 +41,16 @@ public class AchievementManager : MonoBehaviour
 
         foreach (Achievement achievement in database.achievements)
         {
-            GameObject obj = Instantiate(achievementItemPrefab, content);
+            GameObject obj;
+            if(content)
+            {
+                obj = Instantiate(achievementItemPrefab, content);
+            }
+            else
+            {
+                obj = Instantiate(achievementItemPrefab, transform);
+            }
+            
             AchievementItemController item = obj.GetComponent<AchievementItemController>();
             bool unlocked = PlayerPrefs.GetInt(achievement.id, 0) == 1;
             item.unlocked = unlocked;
