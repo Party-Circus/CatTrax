@@ -5,7 +5,16 @@ using UnityEngine.UI;
 public class CartStats : MonoBehaviour
 {
     public AchievementSystem AS;
-
+    public TutorialScript tutorial;
+    private bool tutorialMode = false;
+    public bool TutorialMode {
+        get {
+            return tutorialMode;
+        }
+        set {
+            tutorialMode = value;
+        }
+    }
     private bool hasGameStarted = false;
     public bool HasGameStarted {
         get {
@@ -16,7 +25,13 @@ public class CartStats : MonoBehaviour
             
             if(hasGameStarted)
             {
-                StartGame();
+                if(tutorialMode)
+                {
+                    tutorial.StartGameTutorial();
+                }else{
+                    StartGame();
+                }
+                
             }
         }
     } 
