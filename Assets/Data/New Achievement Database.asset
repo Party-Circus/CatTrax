@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: New Achievement Database
   m_EditorClassIdentifier: 
   achievements:
+  - id: start
+    title: Start The Game
+    description: dasdsad
+    hint: Pull the Whistle
+    quote: sdfdsfsd
   - id: grass
     title: The Grass is Greener Elsewhere
     description: Clear the Grasslands
@@ -93,3 +98,8 @@ MonoBehaviour:
     description: tyr
     hint: try
     quote: try
+  - id: pop
+    title: testach
+    description: dasdsad
+    hint: dsfsdfds
+    quote: sdfdsfsd

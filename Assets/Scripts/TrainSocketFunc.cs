@@ -12,18 +12,18 @@ public class TrainSocketFunc : MonoBehaviour
     private void OnEnable()
     {
         var socketInteractor = GetComponent<XRSocketInteractor>();
-        socketInteractor.selectEntered.AddListener(OnSelectEntered); 
-        socketInteractor.selectExited.AddListener(OnSelectExited); 
+        //socketInteractor.selectEntered.AddListener(OnSelectEntered); 
+        //socketInteractor.selectExited.AddListener(OnSelectExited); 
     }
 
     private void OnDisable()
     {
         var socketInteractor = GetComponent<XRSocketInteractor>();
-        socketInteractor.selectEntered.RemoveListener(OnSelectEntered);
-        socketInteractor.selectExited.RemoveListener(OnSelectExited);
+        //socketInteractor.selectEntered.RemoveListener(OnSelectEntered);
+        //socketInteractor.selectExited.RemoveListener(OnSelectExited);
     }
 
-    private void OnSelectEntered(SelectEnterEventArgs args)
+    /*private void OnSelectEntered(SelectEnterEventArgs args)
     {
         
         GameObject selectedObject = args.interactableObject.transform.gameObject;
@@ -59,5 +59,5 @@ public class TrainSocketFunc : MonoBehaviour
         {
             selectedObject.transform.SetParent(null);
         }
-    }//selectedObject.transform.localScale = new Vector3(0.547241449f, 0.547241449f, 0.911781847f);
+    }//selectedObject.transform.localScale = new Vector3(0.547241449f, 0.547241449f, 0.911781847f);*/
 }
