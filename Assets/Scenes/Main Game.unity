@@ -5956,8 +5956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 1
@@ -9350,8 +9349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 1
@@ -9405,8 +9403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 1
@@ -10720,8 +10717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -12467,8 +12463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -12946,8 +12941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 1
@@ -13970,8 +13964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -19732,8 +19725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -22177,8 +22169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 1
@@ -22939,8 +22930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -23001,8 +22991,9 @@ MonoBehaviour:
   achievementToShow: 0
   WantedAchievementName: {fileID: 1038143004}
   WantedAchievementHint: {fileID: 1909775111}
-  achievementItemPrefab: {fileID: 6330083310758028520, guid: ff29a8fc129aef845bcce5a6b5af6da9,
+  achievementItemPrefab: {fileID: 2584909538602613382, guid: 18fdbf483829221428ac7491b0a4888a,
     type: 3}
+  content: {fileID: 0}
   achievementItems:
   - {fileID: 1532826550}
   - {fileID: 579892376}
@@ -23666,8 +23657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -23734,8 +23724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -25676,8 +25665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -33046,8 +33034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -33313,8 +33300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
@@ -36970,8 +36956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d4c8aa10cc4cc4bb82807cc9f7b7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockedIcon: {fileID: 0}
-  lockedIcon: {fileID: 0}
+  achievementIcon: {fileID: 0}
   titleLabel: {fileID: 0}
   descriptionLabel: {fileID: 0}
   unlocked: 0
