@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18283752, g: 0.22853921, b: 0.30697775, a: 1}
+  m_IndirectSpecularColor: {r: 0.14065114, g: 0.17579684, b: 0.23613326, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1258,7 +1258,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0899997
+      value: -1.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
@@ -1308,7 +1308,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
       propertyPath: m_Layer
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
@@ -1571,7 +1571,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -12179,12 +12179,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0899997
+      value: -1.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.9565258
+      value: 3.96
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
@@ -12229,7 +12229,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
       propertyPath: m_Layer
-      value: 14
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 42b291d489953be4d9d67a92f6bf4e87,
         type: 3}
@@ -19295,7 +19295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1325888226}
-  m_Layer: 14
+  m_Layer: 7
   m_Name: Attach_Point_CatRat(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20878,7 +20878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1417942570}
-  m_Layer: 14
+  m_Layer: 7
   m_Name: Attach_Point_CatRat(2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34481,7 +34481,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -49117,7 +49117,6 @@ Transform:
   - {fileID: 4850620745665699816}
   - {fileID: 233828398108130364}
   - {fileID: 6877061087759772327}
-  - {fileID: 7848523938363083636}
   - {fileID: 1772303146}
   - {fileID: 1862526535}
   m_Father: {fileID: 1999020826}
@@ -49205,7 +49204,7 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 627528805}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
-  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingSelectedInteractable: {fileID: 8811210923545976437}
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
@@ -57232,7 +57231,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4079631604979085199}
   serializedVersion: 4
-  m_Mass: 100
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -60482,8 +60481,8 @@ Transform:
   m_GameObject: {fileID: 4079631604979085199}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.9999631, z: -0, w: -0.008591366}
-  m_LocalPosition: {x: 0.06945547, y: 3.9455326, z: -3.578283}
-  m_LocalScale: {x: 0.54724145, y: 0.54717696, z: 0.91178185}
+  m_LocalPosition: {x: 21.27, y: 2.6960003, z: 34.49}
+  m_LocalScale: {x: 0.39999998, y: 0.40000004, z: 0.39999992}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6686831352662298231}
@@ -60491,7 +60490,7 @@ Transform:
   - {fileID: 2646703834132763378}
   - {fileID: 7024113883125691988}
   - {fileID: 8057730250770749223}
-  m_Father: {fileID: 3323311937285525278}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180.984, z: 0}
 --- !u!4 &7854723371556362171
 Transform:
@@ -64216,25 +64215,13 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4500968213353201379}
-        m_TargetAssemblyTypeName: KittenRetainScale, Assembly-CSharp
-        m_MethodName: FixScale
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4500968213353201379}
         m_TargetAssemblyTypeName: KittenRetainScale, Assembly-CSharp
-        m_MethodName: Detach
+        m_MethodName: lol
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -64243,7 +64230,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
   m_FirstFocusEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -65023,3 +65010,4 @@ SceneRoots:
   - {fileID: 1821119106}
   - {fileID: 1777932525}
   - {fileID: 1576715908}
+  - {fileID: 7848523938363083636}

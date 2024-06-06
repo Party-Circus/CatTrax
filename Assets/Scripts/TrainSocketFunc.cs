@@ -9,7 +9,7 @@ public class TrainSocketFunc : MonoBehaviour
     public GameObject ratObjectTwo;
     public GameObject ratObjectThree;
 
-    private void OnEnable()
+    /*private void OnEnable()
     {
         var socketInteractor = GetComponent<XRSocketInteractor>();
         socketInteractor.selectEntered.AddListener(OnSelectEntered); 
@@ -59,5 +59,5 @@ public class TrainSocketFunc : MonoBehaviour
         {
             selectedObject.transform.SetParent(null);
         }
-    }//selectedObject.transform.localScale = new Vector3(0.547241449f, 0.547241449f, 0.911781847f);
+    }//selectedObject.transform.localScale = new Vector3(0.547241449f, 0.547241449f, 0.911781847f);*/
 }

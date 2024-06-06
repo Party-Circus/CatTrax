@@ -6,7 +6,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class BecomeObstacle : MonoBehaviour
 {
     public GameObject parentObject;
-    
 
     private void OnCollisionEnter(Collision collision)
     {

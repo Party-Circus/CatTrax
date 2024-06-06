@@ -3,14 +3,23 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class KittenRetainScale : MonoBehaviour
 {
-    public void FixScale()
+    //New Name for Script: Make into Tag Cat
+
+    /*private void OnEnable()
     {
-        //transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+        var GrabInteractable = GetComponent<XRDirectInteractor>();
+        GrabInteractable.selectExited.AddListener(OnSelectExited);
     }
 
-    public void Detach()
+    private void OnSelectExited(SelectExitEventArgs args)
     {
-        transform.parent = null;
+        GameObject selectedObject = args.interactableObject.transform.gameObject;
+        selectedObject.gameObject.tag = "Cat";
+    }*/
+
+    public void lol()
+    {
+        gameObject.tag = "Cat";
     }
 
 }
