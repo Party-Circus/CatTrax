@@ -9,6 +9,16 @@ public class TurnKinematicOff : MonoBehaviour
     {
         var GrabInteractable = GetComponent<XRDirectInteractor>();
         GrabInteractable.selectExited.AddListener(OnSelectExited);
+        GrabInteractable.selectEntered.AddListener(OnSelectEntered);
+    }
+
+    private void OnSelectEntered(SelectEnterEventArgs args)
+    {
+        GameObject selectedObject = args.interactableObject.transform.gameObject;
+        if (selectedObject.CompareTag("MountGrab"))
+        {
+            selectedObject.GetComponent<XRGrabInteractable>().retainTransformParent = false;
+        }
     }
 
     private void OnSelectExited(SelectExitEventArgs args)
@@ -17,7 +27,6 @@ public class TurnKinematicOff : MonoBehaviour
         if (selectedObject.CompareTag("MountGrab"))
         {
             Rigidbody rigidBody = selectedObject.GetComponent<Rigidbody>();
-            selectedObject.transform.parent = null;
             rigidBody.isKinematic = false;
             rigidBody.useGravity = true;
         }
