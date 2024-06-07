@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class rotation : MonoBehaviour
 {
+    public GameOver gameOver;
+    public CartStats cartStats;
+
 
     [HideInInspector] public float baseRotationSpeed = .5f;
     // Initial rotation speed
-    [HideInInspector] public float rotationSpeed = .5f;
+    public float rotationSpeed = 0f;
 
     // speed increase rate per second
     private float speedIncreaseRate = 0.2f;
@@ -19,6 +22,8 @@ public class rotation : MonoBehaviour
     private float minRotationSpeed = 0.1f;
     private float maxRotationSpeed = 1.9f;
 
+    public AchievementManager achievementManager;
+
     //public spawningObstacles spawnScript;
 
 
@@ -27,7 +32,8 @@ public class rotation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //achievementManager.UnlockAchievement(AchievementID.goolik);
+        //Debug.Log(achievementManager.isAchievementUnlocked(AchievementID.goolik));
     }
 
     // Update is called once per frame
@@ -48,6 +54,7 @@ public class rotation : MonoBehaviour
 
 
         transform.Rotate(0f, rotationSpeed, 0f, Space.Self);
+        
     }
 
     
@@ -57,6 +64,16 @@ public class rotation : MonoBehaviour
     //dummy
     public void SpeedUpRotation()
     {
+        if(!cartStats.HasGameStarted){
+            cartStats.HasGameStarted = true;
+            
+        }
+
+        if (gameOver.IsGameover)
+        {
+            return;
+        }
+
         // Increase rotation speed
         rotationSpeed += speedIncreaseRate * Time.deltaTime;
 
@@ -66,9 +83,30 @@ public class rotation : MonoBehaviour
 
     public void SlowDownRotation()
     {
+        if (gameOver.IsGameover)
+        {
+            return;
+        }
+
         rotationSpeed -= slowDownRate * Time.deltaTime;
 
         rotationSpeed = Mathf.Clamp(rotationSpeed, minRotationSpeed, maxRotationSpeed);
+    }
+
+    public void SlowDownRotationToZero()
+    {
+        StartCoroutine(SlowMotion());
+    }
+
+    private IEnumerator SlowMotion()
+    {
+        
+        while (rotationSpeed > 0)
+        {
+            rotationSpeed -= 1f * Time.deltaTime;
+            yield return null;
+            rotationSpeed = Mathf.Max(0, rotationSpeed);
+        }
     }
 
 

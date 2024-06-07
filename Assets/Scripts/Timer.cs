@@ -11,9 +11,20 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI Timertxt;
     public GameOver GameOverScript;
 
+    public bool timerStarted;
+    public bool gameStarted = false;
+
     // Update is called once per frame
+
+    public void StartGame()
+    {
+        gameStarted = true;
+    }
+
     void Update()
     {
+        if(gameStarted)
+        {
             if (timevalue > 0)
             {
                 timevalue -= Time.deltaTime;
@@ -21,12 +32,14 @@ public class Timer : MonoBehaviour
             else
             {
                 timevalue = 0;
-                if (GameOverScript != null)
+                if (!GameOverScript.IsGameover)
                 {
                     GameOverScript.TriggerGameOverEffects(false);
                 }
+                    
             }
-            DisplayTime(timevalue);
+        }
+        DisplayTime(timevalue);
     }
     void DisplayTime(float timetodisplay)
     {

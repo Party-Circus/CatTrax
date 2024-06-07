@@ -10,18 +10,28 @@ public class Cart_Move : MonoBehaviour
     public int maxRightPositions = 1; // Set the maximum right positions
     private int currentXPosition = 0; // Tracks the current position
     public AudioSource switchtrack;
-    public AudioClip switchsound; 
+    public AudioClip switchsound;
+
+    Vector3 centerPos;
+    Vector3 leftPos;
+    Vector3 rightPos;
 
     //public Animator trainAnim;
 
     //public rotation rotScript;
 
     public bool canInput = true;
+    public GameOver gameOver;
 
     // Start is called before the first frame update
     void Start()
     {
+        centerPos = transform.position;
+        leftPos = centerPos;
+        rightPos = centerPos;
 
+        leftPos.x -= 4;
+        rightPos.x += 4;
     }
 
     // Update is called once per frame
@@ -37,6 +47,13 @@ public class Cart_Move : MonoBehaviour
 
         }
 
+        //Move Middle
+        if (Input.GetKey(KeyCode.S) && canInput)
+        {
+            StartCoroutine(CartSwitchMiddle());
+
+        }
+
         // Move Right
         if (Input.GetKey(KeyCode.D) && canInput)
         {
@@ -48,39 +65,48 @@ public class Cart_Move : MonoBehaviour
 
     public IEnumerator CartSwitchLeft() 
     {
-        if (currentXPosition > maxLeftPositions)
+
+        //canInput = false;
+        if(!gameOver.IsGameover)
         {
-            canInput = false;
-            currentXPosition--;
-            transform.Translate(Vector3.left * 4f); // Move left by 4 units
+            transform.SetPositionAndRotation(leftPos, Quaternion.identity); // Move left by 4 units
 
             switchtrack.PlayOneShot(switchsound);
 
-            yield return new WaitForSeconds(.3f);
-            canInput = true;
-            
-                
+            yield return new WaitForSeconds(.1f);
         }
+        //canInput = true;
 
+    }
 
+    public IEnumerator CartSwitchMiddle()
+    {
+        //canInput = false;
+        if(!gameOver.IsGameover)
+        {
+            transform.SetPositionAndRotation(centerPos, Quaternion.identity); 
+
+            switchtrack.PlayOneShot(switchsound);
+
+            yield return new WaitForSeconds(.1f);
+        }
+        //canInput = true;
     }
 
     public IEnumerator CartSwitchRight()
     {
 
-        if (currentXPosition < maxRightPositions)
+        //canInput = false;
+        if(!gameOver.IsGameover)
         {
-            canInput = false;
-            currentXPosition++;
-            transform.Translate(Vector3.right * 4f); // Move right by 4 units
+            transform.SetPositionAndRotation(rightPos, Quaternion.identity); // Move left by 4 units
 
             switchtrack.PlayOneShot(switchsound);
-            yield return new WaitForSeconds(.3f);
-            canInput = true;
 
-                
+            yield return new WaitForSeconds(.1f);
         }
-        
+        //canInput = true;
+
     }
 
 

@@ -23,8 +23,9 @@ public class ScoringSystem : MonoBehaviour
         
         if(stats.score >= nextThreshold)
         {
-            terrianScript.changeTerrian();
+            stats.Level = terrianScript.changeTerrian();
             nextThreshold += levelLengthInInt;
+            
         }
         
     }
