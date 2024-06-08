@@ -89,7 +89,10 @@ public class AchievementManager : MonoBehaviour
         item.RefreshView();
         ShowNextAchievement();
         rewardManager.SpawnSpecificItem(achievement);
-        pac.playAnimation(item.achievement.title);
+        if(pac)
+        {
+            pac.playAnimation(item.achievement.title);
+        }
         
     }
 
