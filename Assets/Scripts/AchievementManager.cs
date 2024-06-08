@@ -42,24 +42,23 @@ public class AchievementManager : MonoBehaviour
         foreach (Achievement achievement in database.achievements)
         {
             GameObject obj;
-            if (content)
+            if(content)
             {
                 obj = Instantiate(achievementItemPrefab, content);
-            }
-            else
+            }else
             {
                 obj = Instantiate(achievementItemPrefab, transform);
             }
-
             AchievementItemController item = obj.GetComponent<AchievementItemController>();
             bool unlocked = PlayerPrefs.GetInt(achievement.id, 0) == 1;
             item.unlocked = unlocked;
             item.achievement = achievement;
-            if (content)
+
+            if(content)
             {
                 item.RefreshView();
             }
-            
+
             achievementItems.Add(item);
             
         }
