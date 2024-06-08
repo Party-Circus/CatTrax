@@ -88,9 +88,8 @@ MonoBehaviour:
     description: Transport into the secret level
     hint: There's one more level you haven't finished...
     quote: n/a
-  - id: GOOOOOOLD
-    title: Midas Paw Touch
-    description: Grad a gold nugget from the Tunnel Stage and throw it into the Western
-      Stage
-    hint: Mine in the Tunnel and rreap in the West
-    quote: A prospector with a purpose
+  - id: yuy
+    title: ty
+    description: tyr
+    hint: try
+    quote: try
