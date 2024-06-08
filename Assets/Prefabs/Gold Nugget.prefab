@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 85206822969887536}
   - component: {fileID: 1129551823867337126}
   - component: {fileID: -2980097360530862801}
+  - component: {fileID: 3710211120827652207}
   m_Layer: 7
   m_Name: Gold Nugget
   m_TagString: MountGrab
@@ -30,9 +31,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4667770967529256622}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06991912, y: -0.000000025844198, z: -0.99734807, w: 0.020205788}
-  m_LocalPosition: {x: 2.231, y: 7.17, z: -10.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.096399404, y: -0.69949585, z: 0.6970088, w: -0.12486629}
+  m_LocalPosition: {x: 0.006271139, y: 0.0006432019, z: 0.0022688892}
+  m_LocalScale: {x: 0.00022161327, y: 0.00019018432, z: 0.00017691239}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,8 +132,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -321,3 +322,16 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &3710211120827652207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667770967529256622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0265910b9faeeab448af291745432014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AM: {fileID: 0}
