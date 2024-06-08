@@ -21,6 +21,11 @@ public class Timer : MonoBehaviour
         gameStarted = true;
     }
 
+    public void StopGame()
+    {
+        gameStarted = false;
+    }
+
     void Update()
     {
         if(gameStarted)
