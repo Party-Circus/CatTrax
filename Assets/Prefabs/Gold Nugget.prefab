@@ -13,14 +13,11 @@ GameObject:
   - component: {fileID: 5671199103104789393}
   - component: {fileID: 7286022923404009240}
   - component: {fileID: 85206822969887536}
-  - component: {fileID: 8736874697147069115}
-  - component: {fileID: 5985847787289997132}
   - component: {fileID: 1129551823867337126}
   - component: {fileID: -2980097360530862801}
-  - component: {fileID: 3985512858213103033}
   m_Layer: 7
   m_Name: Gold Nugget
-  m_TagString: HitBox
+  m_TagString: MountGrab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,35 +136,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8736874697147069115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4667770967529256622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3027b69af1c6cd64f969115db99582d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotScript: {fileID: 0}
-  collectParticle: {fileID: 0}
---- !u!114 &5985847787289997132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4667770967529256622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64fdb631a5c05c7478dba9fd4172703e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coalAnimator: {fileID: 1129551823867337126}
-  smokeParticles: {fileID: 0}
-  fireParticles: {fileID: 0}
 --- !u!95 &1129551823867337126
 Animator:
   serializedVersion: 5
@@ -243,7 +211,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3985512858213103033}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GrabOffTrack, Assembly-CSharp
         m_MethodName: Detach
         m_Mode: 1
@@ -353,15 +321,3 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &3985512858213103033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4667770967529256622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c44d2d3bcd7ccb4cb2c7ae0ca6908b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
