@@ -9,7 +9,7 @@ public class TrainSocketFunc : MonoBehaviour
     public GameObject ratObjectTwo;
     public GameObject ratObjectThree;
 
-    private void OnEnable()
+    /*private void OnEnable()
     {
         var socketInteractor = GetComponent<XRSocketInteractor>();
         //socketInteractor.selectEntered.AddListener(OnSelectEntered); 

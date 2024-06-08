@@ -20,7 +20,7 @@ public class AchievementManager : MonoBehaviour
 
     private AchievementRewardManager rewardManager;
 
-
+    public planeAnimationController pac;
 
     void Start()
     {
@@ -89,6 +89,8 @@ public class AchievementManager : MonoBehaviour
         item.RefreshView();
         ShowNextAchievement();
         rewardManager.SpawnSpecificItem(achievement);
+        pac.playAnimation(item.achievement.title);
+        
     }
 
     [ContextMenu(" ClearAchievementsInPlayerPrefs()")]
