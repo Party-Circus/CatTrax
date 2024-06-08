@@ -11,6 +11,7 @@ public class rotation : MonoBehaviour
     [HideInInspector] public float baseRotationSpeed = .5f;
     // Initial rotation speed
     public float rotationSpeed = 0f;
+    private float rotationSaver;
 
     // speed increase rate per second
     private float speedIncreaseRate = 0.2f;
@@ -109,6 +110,16 @@ public class rotation : MonoBehaviour
         }
     }
 
+    public void PauseRotation()
+    {
+        rotationSaver = rotationSpeed;
+        rotationSpeed = 0;
+    }
+
+    public void ResumeRotation()
+    {
+        rotationSpeed = rotationSaver;
+    }
 
 
     //capture the speed, then slow it down, then after slow down timer has elapsed, rapidly build up back to original speed

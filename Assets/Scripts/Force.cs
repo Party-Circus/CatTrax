@@ -7,7 +7,6 @@ public class Force : MonoBehaviour
     Vector3 ImpulseVector = new Vector3(0.0f, 5000.0f, 10000.0f);
     Vector3 spinVector = new Vector3(50000.0f, 50000.0f, 50000.0f);
 
-    public rotation rotScript;
 
     CartStats CPunique;
 

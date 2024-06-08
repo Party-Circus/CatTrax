@@ -29,6 +29,8 @@ public class spawningObstacles : MonoBehaviour
     // 3 = chance for box
     public List<int> eventsToSpawn = new List<int>();
     private int totalChance = 0;
+
+    public bool gameStopped = false;
     
     
 
@@ -67,9 +69,12 @@ public class spawningObstacles : MonoBehaviour
     }
 
     IEnumerator Spawner(float spawnTimer){
-
+                                                                 
         Debug.Log("Waiting for " + spawnTimer);
         yield return new WaitForSeconds(spawnTimer);
+        while(gameStopped){
+            yield return new WaitForSeconds(1);
+        }
 
         //if paused wait until unpaused
         SpawnEnemy();
@@ -94,7 +99,6 @@ public class spawningObstacles : MonoBehaviour
 
 
             spawnTimer = Random.Range(baseSpawnTimer * .5f, baseSpawnTimer * 1.5f);
-            obstacle.GetComponent<Force>().rotScript = rotScript;
 
         }
 
@@ -107,20 +111,18 @@ public class spawningObstacles : MonoBehaviour
             obstacle.GetComponent<Renderer>().materials[1].color = colorTwo;
 
             spawnTimer = Random.Range(baseSpawnTimer * 1.5f, baseSpawnTimer * 3f);
-            obstacle.GetComponent<Force>().rotScript = rotScript;
         }
 
         else if(nextAction < eventsToSpawn[2]){
             obstacle = Instantiate(bigObstacle[0], spawnLocations[5].position, Quaternion.identity, island);
             spawnTimer = Random.Range(baseSpawnTimer * 2f, baseSpawnTimer * 4f);
-            obstacle.GetComponent<Force>().rotScript = rotScript;
+
         }
 
         else if(nextAction < eventsToSpawn[3]){
             int trackSpawn = Random.Range(0, 3);
             Vector3 pos = new Vector3(spawnLocations[trackSpawn].position.x, spawnLocations[trackSpawn].position.y + .7f, spawnLocations[trackSpawn].position.z);
             obstacle = Instantiate(coal[0], pos, Quaternion.identity, island);
-            obstacle.GetComponent<Force>().rotScript = rotScript;
             spawnTimer = Random.Range(2f, 4f);
         }
 
@@ -164,5 +166,25 @@ public class spawningObstacles : MonoBehaviour
                 colorTwo = new Color(0.29f, 0.92f, 0.86f, 0.0f);
                 break;
         }
+    }
+
+    public void SpawnOneEnemy(int track){
+        GameObject obstacle;
+        int rock = Random.Range(0, smallObstacle.Count);
+        obstacle = Instantiate(smallObstacle[rock], spawnLocations[track].position, Quaternion.identity, island);
+
+        obstacle.GetComponent<Renderer>().materials[0].color = colorOne;
+        obstacle.GetComponent<Renderer>().materials[1].color = colorTwo;
+    }
+
+    public void SpawnOneCoal(int track){
+        GameObject obstacle;
+        Vector3 pos = new Vector3(spawnLocations[track].position.x, spawnLocations[track].position.y + .7f, spawnLocations[track].position.z);
+        obstacle = Instantiate(coal[0], pos, Quaternion.identity, island);
+    }
+
+    public void SpawnBox(){
+        GameObject obstacle;
+        obstacle = Instantiate(bigObstacle[0], spawnLocations[5].position, Quaternion.identity, island);
     }
 }
