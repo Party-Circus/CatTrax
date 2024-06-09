@@ -45638,6 +45638,7 @@ MonoBehaviour:
   hitAudioSource: {fileID: 281553009}
   hitSound: {fileID: 8300000, guid: 8b45d68041150c94695e201c2a222c20, type: 3}
   protectSound: {fileID: 8300000, guid: 5f43b2bddba6dc54d8c37776aeebd9d8, type: 3}
+  AM: {fileID: 1576715907}
   level: 0
   backgroundMusic: {fileID: 8492167369875847603}
 --- !u!114 &374543711470375063
@@ -58884,6 +58885,7 @@ GameObject:
   - component: {fileID: 8856365706147781484}
   - component: {fileID: 8646133356420629698}
   - component: {fileID: 8856365706147781485}
+  - component: {fileID: 8856365706147781486}
   m_Layer: 7
   m_Name: Void Kitty!
   m_TagString: Cat
@@ -73019,6 +73021,19 @@ MonoBehaviour:
   AM: {fileID: 1576715907}
   smokeParticles: {fileID: 0}
   fireParticles: {fileID: 0}
+--- !u!114 &8856365706147781486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079631604979085199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b805d7983794e9c4eab128c1895e4f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: Cat
 --- !u!4 &8901439752249973416
 Transform:
   m_ObjectHideFlags: 0

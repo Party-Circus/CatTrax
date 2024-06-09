@@ -194,5 +194,11 @@ public class CartStats : MonoBehaviour
         spawningScript.gameStopped = false;
     }
 
+    public void NoCat()
+    {
+        spawningScript.gameStopped = true;
+        rotationScript.SlowDownRotationToZero();
+    }
+
     
 }
