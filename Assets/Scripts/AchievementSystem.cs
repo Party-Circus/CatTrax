@@ -7,6 +7,7 @@ public class AchievementSystem : MonoBehaviour
     public CartStats cartStats;
     public AchievementManager AM;
 
+
     public void LevelClearAchievements()
     {
         switch (cartStats.level)
@@ -32,5 +33,12 @@ public class AchievementSystem : MonoBehaviour
                 Debug.Log("Gemstone" + AM.isAchievementUnlocked(AchievementID.gemstone));
                 break;
         }
+    }
+
+    public void RatTraxAchievement()
+    {
+        AM.UnlockAchievement(AchievementID.rattrax);
+        Debug.Log("RatTrax: " + AM.isAchievementUnlocked(AchievementID.rattrax));
+        //Check RatTraxChecker.cs
     }
 }
