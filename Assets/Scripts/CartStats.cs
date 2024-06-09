@@ -5,7 +5,19 @@ using UnityEngine.UI;
 public class CartStats : MonoBehaviour
 {
     public AchievementSystem AS;
-
+    public TutorialScript tutorial;
+    private bool tutorialMode = false;
+    public bool TutorialMode {
+        get {
+            return tutorialMode;
+        }
+        set {
+            tutorialMode = value;
+            if(tutorialMode){
+                backgroundMusic.Play();
+            }
+        }
+    }
     private bool hasGameStarted = false;
     public bool HasGameStarted {
         get {
@@ -16,7 +28,13 @@ public class CartStats : MonoBehaviour
             
             if(hasGameStarted)
             {
-                StartGame();
+                if(tutorialMode)
+                {
+                    StartGameTutorial();
+                }else{
+                    StartGame();
+                }
+                
             }
         }
     } 
@@ -29,6 +47,7 @@ public class CartStats : MonoBehaviour
     public int currentHealth;
     public GameOver gameOverScript;
     public spawningObstacles spawningScript;
+    public rotation rotationScript;
 
     [HideInInspector] public bool isProtected = false;
     
@@ -123,7 +142,7 @@ public class CartStats : MonoBehaviour
         trainAnim.SetBool("Immune", false);
     }
 
-    
+
 
     private void StartGame(){
         
@@ -133,4 +152,28 @@ public class CartStats : MonoBehaviour
         trainAnim.SetBool("gameStarted", true);
         timer.StartGame();
     }
+
+    private void StartGameTutorial(){
+        smokeParticle.Play();
+        trainAnim.SetBool("gameStarted", true);
+        timer.StartGame();
+    }
+
+    public void StopMidGame(){
+        smokeParticle.Pause();
+        trainAnim.SetBool("gameStarted", false);
+        timer.StopGame();
+        rotationScript.PauseRotation();
+        spawningScript.gameStopped = true;
+    }
+
+    public void ResumeMidGame(){
+        smokeParticle.Play();
+        trainAnim.SetBool("gameStarted", true);
+        timer.StartGame();
+        rotationScript.ResumeRotation();
+        spawningScript.gameStopped = false;
+    }
+
+    
 }

@@ -19,6 +19,7 @@ TagManager:
   - Switch
   - MountGrab
   - Axe
+  - GoldTrigger
   layers:
   - Default
   - TransparentFX
