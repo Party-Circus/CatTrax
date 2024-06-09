@@ -5,8 +5,6 @@ using UnityEngine;
 public class GoldNugget : MonoBehaviour
 {
     public AchievementManager AM;
-  
-    
 
     void OnTriggerStay(Collider other) 
     {

@@ -5,22 +5,6 @@ using UnityEngine;
 public class BurnKittyBurn : MonoBehaviour
 {
     public AchievementManager AM;
-    //public Coal coal;
-    /*public Furnace furnace;
-
-    void OnTriggerStay(Collider other)
-    {
-        if (other.tag == "Cat")
-        {
-            AM.UnlockAchievement(AchievementID.catintofurnance);
-            Debug.Log("Cat has been Sacrificed");
-            //Destroy(gameObject);
-            //coal.OnBurningComplete();
-            furnace.StartBurning();
-
-        }
-    }
-    */
 
     public Animator kittyAnimator; // Reference to the burning animation
     public ParticleSystem smokeParticles; // Reference to the smoke particle system
