@@ -5186,6 +5186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotScript: {fileID: 0}
+  hasTouched: 0
 --- !u!65 &645703016
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5614,6 +5615,89 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701843913}
   m_Mesh: {fileID: 2212009239438826721, guid: fff2a91a95da14445847867c34efedf1, type: 3}
+--- !u!1001 &734381176
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2319305808062876381, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_Name
+      value: CatRat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 605.7715
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00007247925
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -105.79047
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.13888599
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13883755
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69321686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6934589
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126629489562800231, guid: 497aee9d9dd03c641a087e72a122bfdd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 202.651
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 497aee9d9dd03c641a087e72a122bfdd, type: 3}
 --- !u!1 &749488415
 GameObject:
   m_ObjectHideFlags: 0
@@ -16518,6 +16602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 0}
+  tutorial: {fileID: 0}
   paused: 0
   timer: {fileID: 0}
   hp: 999
@@ -16527,6 +16612,7 @@ MonoBehaviour:
   currentHealth: 0
   gameOverScript: {fileID: 2083947613}
   spawningScript: {fileID: 0}
+  rotationScript: {fileID: 0}
   isProtected: 0
   forcefield: {fileID: 1910333044}
   invincFramesTime: 2
@@ -21877,7 +21963,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -22192,3 +22278,4 @@ SceneRoots:
   - {fileID: 2034350805}
   - {fileID: 612351161}
   - {fileID: 1201543068}
+  - {fileID: 734381176}
