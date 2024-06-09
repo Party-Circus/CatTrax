@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Furnace : MonoBehaviour
 {
@@ -88,6 +89,14 @@ public class Furnace : MonoBehaviour
     public void SetKittyReference(BurnKittyBurn kittyObject)
     {
         kitty = kittyObject;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<XRGrabInteractable>()) 
+        {
+            Destroy(other.gameObject.GetComponent<XRGrabInteractable>());
+        }
     }
 }
 
