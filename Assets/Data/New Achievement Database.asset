@@ -94,3 +94,9 @@ MonoBehaviour:
       Stage
     hint: Mine in the Tunnel and rreap in the West
     quote: A prospector with a purpose
+  - id: TrainRage
+    title: Seek Professional Help
+    description: Take the cat of the train and place him on the track and hit him
+      off the course.
+    hint: Can I run over this Cat?
+    quote: 
