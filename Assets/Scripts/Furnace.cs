@@ -16,6 +16,7 @@ public class Furnace : MonoBehaviour
     public CartStats cartS;//Reference to the CartStats Script for modifying health accessibility
 
     public Timer timer;
+    public BurnKittyBurn kitty;
 
     void Start()
     {
@@ -65,6 +66,10 @@ public class Furnace : MonoBehaviour
         {
             cardboard.OnBurningComplete();//  Call OnBurningComplete() of the coal object
         }
+        if (kitty != null)
+        {
+            kitty.OnBurningComplete();//  Call OnBurningComplete() of the coal object
+        }
 
     }
 
@@ -78,6 +83,11 @@ public class Furnace : MonoBehaviour
     public void SetCBReference(CardboardBurning CB)
     {
         cardboard = CB;
+    }
+
+    public void SetKittyReference(BurnKittyBurn kittyObject)
+    {
+        kitty = kittyObject;
     }
 }
 
