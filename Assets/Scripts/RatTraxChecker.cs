@@ -28,9 +28,12 @@ public class RatTraxChecker : MonoBehaviour
    {
 
         GameObject selectedObject = args.interactableObject.transform.gameObject;
-        if (selectedObject.GetComponent<Identifier>().ID == "Rat")
+        if(selectedObject.GetComponent<Identifier>())
         {
-            AS.RatTraxAchievement();
+            if (selectedObject.GetComponent<Identifier>().ID == "Rat")
+            {
+                AS.RatTraxAchievement();
+            }
         }
 
    }
