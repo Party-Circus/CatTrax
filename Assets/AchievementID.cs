@@ -15,4 +15,5 @@ public enum AchievementID {
 	ratintofurnance,
 	secretlevel,
 	GOOOOOOLD,
+	TrainRage,
 }
