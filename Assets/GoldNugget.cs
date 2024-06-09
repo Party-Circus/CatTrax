@@ -13,6 +13,7 @@ public class GoldNugget : MonoBehaviour
         if (other.tag == "GoldTrigger")
         {
             AM.UnlockAchievement(AchievementID.GOOOOOOLD);
+            Debug.Log("Gold" + AM.isAchievementUnlocked(AchievementID.GOOOOOOLD));
             Debug.Log("Gold Found");
             Destroy(gameObject);
 

@@ -197,6 +197,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Money Kitty
       objectReference: {fileID: 0}
+    - target: {fileID: 5914747357880415767, guid: dd1e443c8cfaf944db210967d963e2fb,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cat
+      objectReference: {fileID: 0}
     - target: {fileID: 6439786616739605677, guid: dd1e443c8cfaf944db210967d963e2fb,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -11337,6 +11342,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Void Kitty! (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2462648941994948023, guid: 4a4b77c71b9b8c9479105c6467a7ce83,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cat
+      objectReference: {fileID: 0}
     - target: {fileID: 2983290085642465037, guid: 4a4b77c71b9b8c9479105c6467a7ce83,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -13382,22 +13392,22 @@ PrefabInstance:
     - target: {fileID: 7142517565891936659, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.025537819
+      value: 0.025538597
       objectReference: {fileID: 0}
     - target: {fileID: 7142517565891936659, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.026732087
+      value: 0.026732747
       objectReference: {fileID: 0}
     - target: {fileID: 7142517565891936659, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6955056
+      value: -0.69550514
       objectReference: {fileID: 0}
     - target: {fileID: 7142517565891936659, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.717569
+      value: -0.7175693
       objectReference: {fileID: 0}
     - target: {fileID: 8131861061152286065, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
@@ -19657,6 +19667,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple Kitty
       objectReference: {fileID: 0}
+    - target: {fileID: 1369121127914837161, guid: 7a778892de45c6e48b3d9256d79fcc11,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cat
+      objectReference: {fileID: 0}
     - target: {fileID: 1750713632513642003, guid: 7a778892de45c6e48b3d9256d79fcc11,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -19745,6 +19760,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Coffee Kitty
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120650285574022335, guid: 465f0de393ea22140bbdf2fed77730bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cat
       objectReference: {fileID: 0}
     - target: {fileID: 8933321713314184709, guid: 465f0de393ea22140bbdf2fed77730bd,
         type: 3}
@@ -58104,7 +58124,7 @@ GameObject:
   - component: {fileID: 8811210923545976437}
   - component: {fileID: 8856365706147781484}
   - component: {fileID: 8646133356420629698}
-  - component: {fileID: 4500968213353201379}
+  - component: {fileID: 8856365706147781485}
   m_Layer: 7
   m_Name: Void Kitty!
   m_TagString: Cat
@@ -58962,6 +58982,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WhiskersModel
       objectReference: {fileID: 0}
+    - target: {fileID: 2055705880823905998, guid: 92df620aa7e3132458f4d1bb4001a239,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cat
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5460392014104336529, guid: 92df620aa7e3132458f4d1bb4001a239, type: 3}
@@ -59386,18 +59411,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2086653522390655391}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 85.35}
---- !u!114 &4500968213353201379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4079631604979085199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038f50e591e4e6540ad6e9a05c9638b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &4501700517707990202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -70069,6 +70082,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Void Kitty! (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1369121127914837161, guid: 7a778892de45c6e48b3d9256d79fcc11,
+        type: 3}
+      propertyPath: m_TagString
+      value: Cat
+      objectReference: {fileID: 0}
     - target: {fileID: 1750713632513642003, guid: 7a778892de45c6e48b3d9256d79fcc11,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -71546,7 +71564,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4500968213353201379}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: KittenRetainScale, Assembly-CSharp
         m_MethodName: lol
         m_Mode: 1
@@ -71677,6 +71695,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.0300775, y: 4.437277, z: 2.8402507}
   m_Center: {x: 0.2152314, y: 3.5894861, z: 0.036583673}
+--- !u!114 &8856365706147781485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079631604979085199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729618344be39bf49808aafbf930f143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AM: {fileID: 1576715907}
+  kittyAnimator: {fileID: 0}
+  smokeParticles: {fileID: 0}
+  fireParticles: {fileID: 0}
 --- !u!4 &8901439752249973416
 Transform:
   m_ObjectHideFlags: 0
