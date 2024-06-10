@@ -41,4 +41,11 @@ public class AchievementSystem : MonoBehaviour
         Debug.Log("RatTrax: " + AM.isAchievementUnlocked(AchievementID.rattrax));
         //Check RatTraxChecker.cs
     }
+
+    public void GoldenKittyAchievement()
+    {
+        AM.UnlockAchievement(AchievementID.GoldenKitty);
+        Debug.Log("RatTrax: " + AM.isAchievementUnlocked(AchievementID.GoldenKitty));
+        //Check Furnance.cs
+    }
 }

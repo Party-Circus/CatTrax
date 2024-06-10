@@ -16,4 +16,5 @@ public enum AchievementID {
 	secretlevel,
 	GOOOOOOLD,
 	TrainRage,
+	GoldenKitty,
 }

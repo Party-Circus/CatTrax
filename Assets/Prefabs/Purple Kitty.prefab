@@ -751,7 +751,7 @@ PrefabInstance:
     - target: {fileID: 2462648941994948023, guid: 4a4b77c71b9b8c9479105c6467a7ce83,
         type: 3}
       propertyPath: m_Name
-      value: Void Kitty! (1) Variant
+      value: Purple Kitty
       objectReference: {fileID: 0}
     - target: {fileID: 2983290085642465037, guid: 4a4b77c71b9b8c9479105c6467a7ce83,
         type: 3}
@@ -868,6 +868,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1a9db23837fbcdf4ca150805bc82a7ab, type: 2}
+    - target: {fileID: 8737250960210603420, guid: 4a4b77c71b9b8c9479105c6467a7ce83,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3844fdf378c96fb40814b650e8115e24, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
