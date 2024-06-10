@@ -9119,7 +9119,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!108 &410087040
 Light:
@@ -9172,7 +9172,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -28972,7 +28972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brightness: 2
-  warmness: 5000
+  warmness: 4000
   skyboxExposure: 1
 --- !u!1001 &1584764158
 PrefabInstance:
@@ -44466,8 +44466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9120aed6085a4af4291c757e499a5589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brightness: 2
-  warmness: 5000
+  brightness: 3
+  warmness: 4000
   skyboxExposure: 1
 --- !u!114 &2138004450 stripped
 MonoBehaviour:
