@@ -13999,22 +13999,22 @@ PrefabInstance:
     - target: {fileID: 7142517565891936659, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.025537819
+      value: 0.025538597
       objectReference: {fileID: 0}
     - target: {fileID: 7142517565891936659, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.026732087
+      value: 0.026732747
       objectReference: {fileID: 0}
     - target: {fileID: 7142517565891936659, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6955056
+      value: -0.69550514
       objectReference: {fileID: 0}
     - target: {fileID: 7142517565891936659, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.717569
+      value: -0.7175693
       objectReference: {fileID: 0}
     - target: {fileID: 8131861061152286065, guid: 6805e9d4b19ee5542b179be29bcb6d97,
         type: 3}
@@ -27235,9 +27235,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1066569179520558720, guid: babbe2af31aa4364aa1e0036a57c6e5b,
         type: 3}
+      propertyPath: cart
+      value: 
+      objectReference: {fileID: 354858884110446568}
+    - target: {fileID: 1066569179520558720, guid: babbe2af31aa4364aa1e0036a57c6e5b,
+        type: 3}
       propertyPath: ratObject
       value: 
       objectReference: {fileID: 1989090051}
+    - target: {fileID: 1066569179520558720, guid: babbe2af31aa4364aa1e0036a57c6e5b,
+        type: 3}
+      propertyPath: rotScript
+      value: 
+      objectReference: {fileID: 36926378290154864}
     - target: {fileID: 1066569179520558720, guid: babbe2af31aa4364aa1e0036a57c6e5b,
         type: 3}
       propertyPath: parentObject
@@ -45443,6 +45453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 2158302285349175024}
   cartStats: {fileID: 354858884110446568}
+  isCatInCharge: 1
   baseRotationSpeed: 0.5
   rotationSpeed: 0
   achievementManager: {fileID: 0}
@@ -46328,7 +46339,7 @@ MonoBehaviour:
   currentHealth: 0
   gameOverScript: {fileID: 2158302285349175024}
   spawningScript: {fileID: 535499648716109000}
-  rotationScript: {fileID: 0}
+  rotationScript: {fileID: 36926378290154864}
   isProtected: 0
   forcefield: {fileID: 1775681402}
   invincFramesTime: 2

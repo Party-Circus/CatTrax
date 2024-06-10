@@ -99,13 +99,6 @@ public class CartStats : MonoBehaviour
             if (immune){
                 return;
             }
-            /*
-            if (id == "Cat")
-            {
-                AM.UnlockAchievement(AchievementID.TrainRage);
-                Debug.Log("Kitty" + AM.isAchievementUnlocked(AchievementID.TrainRage)); 
-            }
-            */
             else if(isProtected){
                 isProtected = false;
                 forcefield.SetActive(false);
@@ -200,5 +193,11 @@ public class CartStats : MonoBehaviour
         rotationScript.SlowDownRotationToZero();
     }
 
-    
+    public void YesCat()
+    {
+        spawningScript.gameStopped = false;
+        rotationScript.rotationSpeed = .8f;
+    }
+
+
 }
