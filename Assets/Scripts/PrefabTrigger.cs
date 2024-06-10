@@ -87,7 +87,7 @@ public class PrefabTrigger : MonoBehaviour
 
         while (lights.intensity != brightness)
         {
-            lights.intensity = Mathf.Lerp(lights.intensity, brightness, .8f);
+            lights.intensity = brightness;
             yield return new WaitForEndOfFrame();
         }
     }
@@ -98,7 +98,7 @@ public class PrefabTrigger : MonoBehaviour
 
         while (currentExposure != targetExposure)
         {
-            currentExposure = Mathf.Lerp(currentExposure, targetExposure, .8f);
+            currentExposure = targetExposure;
             RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
             DynamicGI.UpdateEnvironment();
             yield return new WaitForEndOfFrame();
@@ -111,7 +111,7 @@ public class PrefabTrigger : MonoBehaviour
 
         while (lights.colorTemperature != warmness)
         {
-            lights.colorTemperature = Mathf.Lerp(lights.colorTemperature, warmness, .8f);
+            lights.colorTemperature = warmness;
     
             yield return new WaitForEndOfFrame();
         }
