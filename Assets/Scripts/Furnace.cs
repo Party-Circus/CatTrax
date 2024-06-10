@@ -17,6 +17,7 @@ public class Furnace : MonoBehaviour
 
     public Timer timer;
     public BurnKittyBurn kitty;
+    public AchievementSystem AS;
 
     void Start()
     {
@@ -89,5 +90,6 @@ public class Furnace : MonoBehaviour
     {
         kitty = kittyObject;
     }
+
 }
 
