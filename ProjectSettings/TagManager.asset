@@ -18,6 +18,7 @@ TagManager:
   - Cat
   - Switch
   - MountGrab
+  - Axe
   - GoldTrigger
   layers:
   - Default

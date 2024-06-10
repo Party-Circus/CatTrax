@@ -90,7 +90,7 @@ MonoBehaviour:
     quote: n/a
   - id: GOOOOOOLD
     title: Midas Paw Touch
-    description: Grad a gold nugget from the Tunnel Stage and throw it into the Western
+    description: Grab a gold nugget from the Tunnel Stage and throw it into the Western
       Stage
     hint: Mine in the Tunnel and rreap in the West
     quote: A prospector with a purpose
@@ -100,3 +100,8 @@ MonoBehaviour:
       off the course.
     hint: Can I run over this Cat?
     quote: 
+  - id: GoldenKitty
+    title: Smelting
+    description: Grab a gold nugget from the Tunnel Stage and throw it into the Furnance
+    hint: We're low on fuel, maybe a gold nugget would be good
+    quote: Can't mine obsedian, but it'll work

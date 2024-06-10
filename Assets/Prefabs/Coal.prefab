@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotScript: {fileID: 0}
+  collectParticle: {fileID: 0}
 --- !u!114 &5985847787289997132
 MonoBehaviour:
   m_ObjectHideFlags: 0
