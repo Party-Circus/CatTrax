@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 4611598676230594559}
   - component: {fileID: 8770393397757323031}
   - component: {fileID: 2844287112956366392}
+  - component: {fileID: -9038496728543372161}
   m_Layer: 7
   m_Name: Void Kitty! 1
   m_TagString: Cat
@@ -542,6 +543,18 @@ MonoBehaviour:
   AM: {fileID: 0}
   smokeParticles: {fileID: 0}
   fireParticles: {fileID: 0}
+--- !u!114 &-9038496728543372161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879079001165797458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038f50e591e4e6540ad6e9a05c9638b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4419639945648554128
 GameObject:
   m_ObjectHideFlags: 0
