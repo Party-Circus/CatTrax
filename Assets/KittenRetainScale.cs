@@ -3,11 +3,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class KittenRetainScale : MonoBehaviour
 {
-    //New Name for Script: Make into Tag Cat
+    //New Name for Script: Make into Tag Cat - Chris
 
-    /*private void OnEnable()
+    private void OnEnable()
     {
-        var GrabInteractable = GetComponent<XRDirectInteractor>();
+        var GrabInteractable = GetComponent<XRGrabInteractable>();
         GrabInteractable.selectExited.AddListener(OnSelectExited);
     }
 
@@ -15,7 +15,7 @@ public class KittenRetainScale : MonoBehaviour
     {
         GameObject selectedObject = args.interactableObject.transform.gameObject;
         selectedObject.gameObject.tag = "Cat";
-    }*/
+    }
 
     public void lol()
     {

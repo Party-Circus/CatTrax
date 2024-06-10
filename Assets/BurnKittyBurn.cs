@@ -6,7 +6,7 @@ public class BurnKittyBurn : MonoBehaviour
 {
     public AchievementManager AM;
 
-    public Animator kittyAnimator; // Reference to the burning animation
+    //public Animator kittyAnimator; // Reference to the burning animation
     public ParticleSystem smokeParticles; // Reference to the smoke particle system
     public ParticleSystem fireParticles; // Reference to the fire particle system
 
@@ -23,7 +23,7 @@ public class BurnKittyBurn : MonoBehaviour
                 furnace.StartBurning();
                 Debug.Log("Kitty added to furnace.");
 
-                kittyAnimator.SetBool("Burning", true);
+                //kittyAnimator.SetBool("Burning", true);
 
 
                 // Activate the particle systems for fire and smoke

@@ -6,6 +6,7 @@ public class rotation : MonoBehaviour
 {
     public GameOver gameOver;
     public CartStats cartStats;
+    public bool isCatInCharge = true;
 
 
     [HideInInspector] public float baseRotationSpeed = .5f;
@@ -17,7 +18,7 @@ public class rotation : MonoBehaviour
     private float speedIncreaseRate = 0.2f;
 
     //rate of slowing down
-    private float slowDownRate = 0.4f;
+    private float slowDownRate = 0.8f;
 
     // Minimum and maximum rotation speed
     private float minRotationSpeed = 0.1f;
@@ -70,7 +71,7 @@ public class rotation : MonoBehaviour
             
         }
 
-        if (gameOver.IsGameover)
+        if (gameOver.IsGameover || !isCatInCharge)
         {
             return;
         }
@@ -84,7 +85,7 @@ public class rotation : MonoBehaviour
 
     public void SlowDownRotation()
     {
-        if (gameOver.IsGameover)
+        if (gameOver.IsGameover || !isCatInCharge)
         {
             return;
         }

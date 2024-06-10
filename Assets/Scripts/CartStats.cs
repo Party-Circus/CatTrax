@@ -64,7 +64,10 @@ public class CartStats : MonoBehaviour
     public AudioClip hitSound;
     public AudioClip protectSound;
 
+    public AchievementManager AM;
+
     public int level;
+
     public int Level
     {
         get { return level; }
@@ -84,7 +87,16 @@ public class CartStats : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("HitBox"))
         {
-            if(immune){
+            if (collision.gameObject.GetComponent<Identifier>())
+            {
+
+                if (collision.gameObject.GetComponent<Identifier>().ID == "Cat")
+                {
+                    AM.UnlockAchievement(AchievementID.TrainRage);
+                    Debug.Log("Kitty: " + AM.isAchievementUnlocked(AchievementID.TrainRage));
+                }
+            }
+            if (immune){
                 return;
             }
             else if(isProtected){
@@ -175,5 +187,17 @@ public class CartStats : MonoBehaviour
         spawningScript.gameStopped = false;
     }
 
-    
+    public void NoCat()
+    {
+        spawningScript.gameStopped = true;
+        rotationScript.SlowDownRotationToZero();
+    }
+
+    public void YesCat()
+    {
+        spawningScript.gameStopped = false;
+        rotationScript.rotationSpeed = .8f;
+    }
+
+
 }
