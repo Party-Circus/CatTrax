@@ -56,7 +56,7 @@ MonoBehaviour:
   - id: nomorefuel
     title: WE RAN OUT OF FUEL!!!
     description: Lose to Time
-    hint: Make sure timer doesn't hit 0
+    hint: Let the timer hit 0
     quote: n/a
   - id: rattrax
     title: RatTrax
@@ -92,16 +92,16 @@ MonoBehaviour:
     title: Midas Paw Touch
     description: Grab a gold nugget from the Tunnel Stage and throw it into the Western
       Stage
-    hint: Mine in the Tunnel and rreap in the West
+    hint: Mine in the tunnel and reap in the West
     quote: A prospector with a purpose
   - id: TrainRage
     title: Seek Professional Help
     description: Take the cat of the train and place him on the track and hit him
       off the course.
-    hint: Can I run over this Cat?
+    hint: Can I run over this cat?
     quote: 
   - id: GoldenKitty
     title: Smelting
     description: Grab a gold nugget from the Tunnel Stage and throw it into the Furnance
     hint: We're low on fuel, maybe a gold nugget would be good
-    quote: Can't mine obsedian, but it'll work
+    quote: Can't mine obsidian, but it'll work
