@@ -30,10 +30,7 @@ public class TrainSocketFunc : MonoBehaviour
     {
 
         rotScript.isCatInCharge = true;
-        if (cart.HasGameStarted)
-        {
-            cart.YesCat();
-        }
+        cart.YesCat();
        
     }
 

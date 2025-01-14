@@ -63,8 +63,16 @@ public class spawningObstacles : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (Mathf.Abs(rotScript.rotationSpeed) > 0.01f)
+        {
+            baseSpawnTimer = baseSpawnTimerModifier * rotScript.baseRotationSpeed / rotScript.rotationSpeed;
+        }
+        else
+        {
+            baseSpawnTimer = baseSpawnTimerModifier;
+        }
 
-        baseSpawnTimer = baseSpawnTimerModifier * rotScript.baseRotationSpeed/rotScript.rotationSpeed;
+        baseSpawnTimer = Mathf.Clamp(baseSpawnTimer, 0.1f, 6f);
         
     }
 

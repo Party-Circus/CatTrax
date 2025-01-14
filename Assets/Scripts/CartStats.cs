@@ -191,12 +191,19 @@ public class CartStats : MonoBehaviour
     {
         spawningScript.gameStopped = true;
         rotationScript.SlowDownRotationToZero();
+        Debug.Log("gameStoppped = true");
     }
 
     public void YesCat()
     {
         spawningScript.gameStopped = false;
-        rotationScript.rotationSpeed = .8f;
+
+        if (HasGameStarted)
+        {
+            rotationScript.rotationSpeed = .8f;
+        }
+
+        Debug.Log("gameStoppped = false");
     }
 
 
