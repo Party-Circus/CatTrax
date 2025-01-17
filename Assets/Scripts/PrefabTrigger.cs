@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Runtime.Serialization;
 using UnityEngine;
 
 public class PrefabTrigger : MonoBehaviour
@@ -8,19 +10,28 @@ public class PrefabTrigger : MonoBehaviour
 
     public Light lights;
     
-    float currentExposure = 1;
+    float currentExposure = 2;
     
     private bool changeLevel = false;
     private int level = 0;
     private int prevLevel = -1;
-    
+
+
+    public LevelSettings firstLevel;
+
+
 
     public Transform child;
-
+    
     public AchievementManager achievementManager;
 
     void Start(){
-        RenderSettings.skybox.SetFloat("_Exposure", 1f);
+        //Debug.Log("Happened");
+        //RenderSettings.skybox.SetFloat("_Exposure", 1f);
+        StartCoroutine(AdjustTheLights(firstLevel.brightness));
+        StartCoroutine(AdjustTheExposure(firstLevel.skyboxExposure));
+        StartCoroutine(AdjustTheWarmth(firstLevel.warmness));
+
     }
 
     private void Update()
@@ -31,6 +42,7 @@ public class PrefabTrigger : MonoBehaviour
             changeLevel = true;
             Debug.Log(changeLevel);
         }*/
+
     }
 
     public int changeTerrian()
