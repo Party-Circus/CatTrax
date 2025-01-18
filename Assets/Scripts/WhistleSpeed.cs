@@ -26,6 +26,11 @@ public class WhistleSpeed : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+        if (rotScript.isCatInCharge == false)
+        {
+            return;
+        }
+
         //Test if code works, its suppose to prevent whistle from speeding up if the game is in gameOver 
         rotScript.SpeedUpRotation();
 

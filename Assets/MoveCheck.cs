@@ -8,7 +8,13 @@ public class MoveCheck : MonoBehaviour
     public MoveCheck otherMove;
 
     private void OnTriggerStay(Collider other) {
-        moved = true;
-        otherMove.moved = true;
+
+        if(other.CompareTag("Switch"))
+        {
+            moved = true;
+            otherMove.moved = true;
+
+        }    
+        
     }
 }

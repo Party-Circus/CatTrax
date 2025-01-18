@@ -5,8 +5,9 @@ using UnityEngine;
 public class DangerCheck : MonoBehaviour
 {
     public bool danger = false;
+    public bool coalDanger = false;
 
-    private void OnTriggerStay(Collider other) {
+    private void OnTriggerEnter(Collider other) {
         danger = true;
     }
 

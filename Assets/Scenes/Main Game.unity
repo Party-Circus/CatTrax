@@ -46207,6 +46207,8 @@ MonoBehaviour:
   isCatInCharge: 1
   baseRotationSpeed: 0.5
   rotationSpeed: 0
+  rotationSaver: 0
+  rotationPaused: 0
   achievementManager: {fileID: 0}
 --- !u!4 &61171504192069430
 Transform:
@@ -47011,7 +47013,7 @@ MonoBehaviour:
   timer: {fileID: 806342718}
   hp: 999
   score: 0
-  initialTime: 999
+  initialTime: 5
   healthBar: {fileID: 806342717}
   currentHealth: 0
   gameOverScript: {fileID: 2158302285349175024}
@@ -47021,6 +47023,7 @@ MonoBehaviour:
   forcefield: {fileID: 1775681402}
   invincFramesTime: 2
   immune: 0
+  rotationPaused: 0
   trainAnim: {fileID: 1999020825}
   smokeParticle: {fileID: 1703103373}
   hitAudioSource: {fileID: 281553009}

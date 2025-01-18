@@ -56,6 +56,7 @@ public class CartStats : MonoBehaviour
 
     public float invincFramesTime = 0;
     public bool immune = false;
+    public bool rotationPaused = false;
 
     public Animator trainAnim;
     public ParticleSystem smokeParticle;
@@ -191,19 +192,25 @@ public class CartStats : MonoBehaviour
     {
         spawningScript.gameStopped = true;
         rotationScript.SlowDownRotationToZero();
-        Debug.Log("gameStoppped = true");
+
     }
 
     public void YesCat()
     {
-        spawningScript.gameStopped = false;
-
-        if (HasGameStarted)
+        
+        if (gameOverScript.IsGameover || rotationScript.rotationPaused)
         {
-            rotationScript.rotationSpeed = .8f;
+            return;
         }
 
-        Debug.Log("gameStoppped = false");
+        spawningScript.gameStopped = false;
+        if (HasGameStarted)
+        {
+            
+            rotationScript.rotationSpeed = 0.5f;
+        }
+
+        
     }
 
 

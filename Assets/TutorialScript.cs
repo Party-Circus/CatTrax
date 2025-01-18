@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class TutorialScript : MonoBehaviour
 {
     public CartStats cartStats;
+    public rotation rotation;
     public spawningObstacles spawningScript;
     public List<GameObject> textBoxes;
     private float normalWaitingTime = 6f;
 
     //Controls to pop in
+    public GameObject cat;
     public GameObject whistle;
     public GameObject brake;
     public GameObject control;
@@ -72,6 +75,22 @@ public class TutorialScript : MonoBehaviour
         Activate(6);
         yield return new WaitForSeconds(normalWaitingTime-3f);
         Deactivate(6);
+
+        //First we need a navigator for our train (33)
+        Activate(33);
+        yield return new WaitForSeconds(normalWaitingTime);
+        Deactivate(33);
+
+        //Grab this black cat and place him on top of the train (34)
+        Activate(34);
+        cat.SetActive(true);
+        yield return new WaitUntil(() => rotation.isCatInCharge);
+        Deactivate(34);
+
+        //Great! You can't drive a train without a navigator (35)
+        Activate(35);
+        yield return new WaitForSeconds(normalWaitingTime);
+        Deactivate(35);
 
         //Let's pull down that whistle to start the game!
         Activate(7);
@@ -214,6 +233,8 @@ public class TutorialScript : MonoBehaviour
         Activate(32);
         yield return new WaitForSeconds(normalWaitingTime);
         Deactivate(32);
+
+        SceneManager.LoadScene("Main Menu");
 
     }
 

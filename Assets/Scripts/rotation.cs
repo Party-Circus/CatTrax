@@ -7,12 +7,14 @@ public class rotation : MonoBehaviour
     public GameOver gameOver;
     public CartStats cartStats;
     public bool isCatInCharge = true;
+    
 
 
     [HideInInspector] public float baseRotationSpeed = .5f;
     // Initial rotation speed
     public float rotationSpeed = 0f;
-    private float rotationSaver;
+    public float rotationSaver;
+    public bool rotationPaused = false;
 
     // speed increase rate per second
     private float speedIncreaseRate = 0.2f;
@@ -71,8 +73,9 @@ public class rotation : MonoBehaviour
             
         }
 
-        if (gameOver.IsGameover || !isCatInCharge)
+        if (gameOver.IsGameover || !isCatInCharge || rotationPaused)
         {
+     
             return;
         }
 
@@ -85,7 +88,7 @@ public class rotation : MonoBehaviour
 
     public void SlowDownRotation()
     {
-        if (gameOver.IsGameover || !isCatInCharge)
+        if (gameOver.IsGameover || !isCatInCharge || rotationPaused)
         {
             return;
         }
@@ -113,13 +116,25 @@ public class rotation : MonoBehaviour
 
     public void PauseRotation()
     {
+        rotationPaused = true;
         rotationSaver = rotationSpeed;
         rotationSpeed = 0;
     }
 
     public void ResumeRotation()
     {
+        if (gameOver.IsGameover)
+        {
+            return;
+        }
+        rotationPaused = false;
         rotationSpeed = rotationSaver;
+
+        //If no cat on train, start slowing down
+        if (!isCatInCharge)
+        {
+            cartStats.NoCat();
+        }
     }
 
 
