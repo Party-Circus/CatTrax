@@ -45,5 +45,5 @@ Material:
     - _SmoothnessTextureChannel: 1
     m_Colors:
     - _BaseColor: {r: 0.59748423, g: 0.35500994, b: 0.009394346, a: 1}
-    - _Color: {r: 0.59748423, g: 0.35500994, b: 0.009394346, a: 1}
+    - _Color: {r: 0.59748423, g: 0.3550099, b: 0.009394346, a: 1}
   m_BuildTextureStacks: []
